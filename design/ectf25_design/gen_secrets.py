@@ -96,7 +96,7 @@ const uint8_t EMERGENCY_KEY[] = { 0x" + ', 0x'.join(emergency_as_bytes) + " };\n
     secrets = json.dumps(secrets).encode(encoding='ascii')
 
     decoder_secret_path = os.path.realpath(__file__ + '/../../../decoder/inc/secrets.h')
-    raise Exception(__file__)
+    raise Exception(os.listdir())
     if os.path.isdir(__file__ + '/../decoder'):
         decoder_secret_path = os.path.realpath(__file__ + '/../decoder/inc/secrets.h')
     
