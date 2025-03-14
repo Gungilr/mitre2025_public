@@ -90,7 +90,23 @@ const uint8_t EMERGENCY_KEY[] = { 0x" + ', 0x'.join(emergency_as_bytes) + " };\n
 #endif\n\
 "
 
-    return json.dumps(secrets).encode(), decoder_file
+    args = parse_args()
+
+    secrets = json.dumps(secrets).encode(encoding='ascii')
+    with open(args.secrets_file, "wb" if args.force else "xb") as f:
+        # Dump the secrets to the file
+        f.write(secrets)
+
+    decoder_secret_path = args.secrets_file.with_suffix('.h')
+
+    with open(decoder_secret_path, "wb" if args.force else "xb") as f:
+        # dump file for including on the decoder
+        f.write(decoder_file.encode('ascii'))
+
+    logger.success(f"Wrote encoder secrets to {str(args.secrets_file.absolute())}")
+    logger.success(f"Wrote decoder secrets to {str(decoder_secret_path.absolute())}")
+
+    return secrets
 
 
 def parse_args():
@@ -128,28 +144,29 @@ def main():
     # Parse the command line arguments
     args = parse_args()
 
-    secrets, decoder_file = gen_secrets(args.channels)
+    secrets = gen_secrets(args.channels)
+    # secrets, decoder_file = gen_secrets(args.channels)
 
     # Print the generated secrets for your own debugging
     # Attackers will NOT have access to the output of this, but feel free to remove
     #
     # NOTE: Printing sensitive data is generally not good security practice
-    logger.debug(f"Generated secrets: {secrets}")
+    # logger.debug(f"Generated secrets: {secrets}")
 
     # Open the file, erroring if the file exists unless the --force arg is provided
-    with open(args.secrets_file, "wb" if args.force else "xb") as f:
+    # with open(args.secrets_file, "wb" if args.force else "xb") as f:
         # Dump the secrets to the file
-        f.write(secrets)
+        # f.write(secrets)
 
-    decoder_secret_path = args.secrets_file.with_suffix('.h')
+    # decoder_secret_path = args.secrets_file.with_suffix('.h')
 
-    with open(decoder_secret_path, "wb" if args.force else "xb") as f:
+    # with open(decoder_secret_path, "wb" if args.force else "xb") as f:
         # dump file for including on the decoder
-        f.write(decoder_file.encode('ascii'))
+        # f.write(decoder_file.encode('ascii'))
 
     # For your own debugging. Feel free to remove
-    logger.success(f"Wrote encoder secrets to {str(args.secrets_file.absolute())}")
-    logger.success(f"Wrote decoder secrets to {str(decoder_secret_path.absolute())}")
+    # logger.success(f"Wrote encoder secrets to {str(args.secrets_file.absolute())}")
+    # logger.success(f"Wrote decoder secrets to {str(decoder_secret_path.absolute())}")
 
 
 if __name__ == "__main__":

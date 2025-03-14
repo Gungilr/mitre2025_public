@@ -11,42 +11,25 @@
  * @copyright Copyright (c) 2025 The MITRE Corporation
  */
 
-#ifndef __STATUS_LED__
-#define __STATUS_LED__
-
-
-#include "led.h"
-
-/* These macros may be used to control the RGB LED on the MAX78000 fthr boards*/
-
-#ifndef LINUX_BUILD
-// reset LED state
-#define STATUS_LED_OFF(void) LED_Off(LED1); LED_Off(LED2); LED_Off(LED3);
-// Error state
-#define STATUS_LED_RED(void) STATUS_LED_OFF(); LED_On(LED1);
-// waiting for message
-#define STATUS_LED_GREEN(void) STATUS_LED_OFF(); LED_On(LED2);
-#define STATUS_LED_BLUE(void) STATUS_LED_OFF(); LED_On(LED3);
-// Decode command
-#define STATUS_LED_PURPLE(void) STATUS_LED_OFF(); LED_On(LED1); LED_On(LED3);
-// List command
-#define STATUS_LED_CYAN(void) STATUS_LED_OFF(); LED_On(LED2); LED_On(LED3);
-// Update command
-#define STATUS_LED_YELLOW(void) STATUS_LED_OFF(); LED_On(LED1); LED_On(LED2);
-#define STATUS_LED_WHITE(void) STATUS_LED_OFF(); LED_On(LED1); LED_On(LED2); LED_On(LED3);
-#else
-#define STATUS_LED_OFF(void) printf("STATUS LED: OFF\n");
-#define STATUS_LED_RED(void) printf("STATUS LED: RED\n");
-#define STATUS_LED_GREEN(void) printf("STATUS LED: GREEN\n");
-#define STATUS_LED_BLUE(void) printf("STATUS LED: BLUE\n");
-#define STATUS_LED_PURPLE(void) printf("STATUS LED: PURPLE\n");
-#define STATUS_LED_CYAN(void) printf("STATUS LED: CYAN\n");
-#define STATUS_LED_YELLOW(void) printf("STATUS LED: YELLOW\n");
-#define STATUS_LED_WHITE(void) printf("STATUS LED: WHITE\n");
-
-#endif
-
-// Error case alias
-#define STATUS_LED_ERROR STATUS_LED_RED
-
-#endif // __STATUS_LED__
+ #ifndef __STATUS_LED__
+ #define __STATUS_LED__
+ 
+ 
+ #include "led.h"
+ 
+ /* These macros may be used to control the RGB LED on the MAX78000 fthr boards*/
+ 
+ #define STATUS_LED_OFF(void) printf("STATUS LED: OFF\n");
+ #define STATUS_LED_RED(void) printf("STATUS LED: RED\n");
+ #define STATUS_LED_GREEN(void) printf("STATUS LED: GREEN\n");
+ #define STATUS_LED_BLUE(void) printf("STATUS LED: BLUE\n");
+ #define STATUS_LED_PURPLE(void) printf("STATUS LED: PURPLE\n");
+ #define STATUS_LED_CYAN(void) printf("STATUS LED: CYAN\n");
+ #define STATUS_LED_YELLOW(void) printf("STATUS LED: YELLOW\n");
+ #define STATUS_LED_WHITE(void) printf("STATUS LED: WHITE\n");
+ 
+ // Error case alias
+ #define STATUS_LED_ERROR STATUS_LED_RED
+ 
+ #endif // __STATUS_LED__
+ 
