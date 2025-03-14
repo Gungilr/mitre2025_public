@@ -3,5 +3,3 @@ Name: ectf25_design
 Version: 2025.0+example
 Requires-Python: >=3.11
 Requires-Dist: loguru
-Requires-Dist: cryptography
-Requires-Dist: ecdsa

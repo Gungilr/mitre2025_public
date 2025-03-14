@@ -26,7 +26,7 @@
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdatomic.h \
  wolfssl/wolfssl/wolfcrypt/memory.h /usr/include/newlib/stdlib.h \
  /usr/include/newlib/machine/stdlib.h /usr/include/newlib/alloca.h \
- /usr/include/newlib/ctype.h /secrets/secrets.h inc/constants.h \
+ /usr/include/newlib/ctype.h inc/secrets.h inc/constants.h \
  /root/msdk-2024_02/Libraries/PeriphDrivers/Include/MAX78000/mxc_device.h \
  /root/msdk-2024_02/Libraries/CMSIS/Device/Maxim/MAX78000/Include/max78000.h \
  /root/msdk-2024_02/Libraries/CMSIS/5.9.0/Core/Include/core_cm4.h \

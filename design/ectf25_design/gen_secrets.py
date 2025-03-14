@@ -93,18 +93,14 @@ const uint8_t EMERGENCY_KEY[] = { 0x" + ', 0x'.join(emergency_as_bytes) + " };\n
     args = parse_args()
 
     secrets = json.dumps(secrets).encode(encoding='ascii')
-    with open(args.secrets_file, "wb" if args.force else "xb") as f:
-        # Dump the secrets to the file
-        f.write(secrets)
 
-    decoder_secret_path = args.secrets_file.with_suffix('.h')
+    decoder_secret_path = 'decoder/inc/secrets.h'
 
     with open(decoder_secret_path, "wb" if args.force else "xb") as f:
         # dump file for including on the decoder
         f.write(decoder_file.encode('ascii'))
 
-    logger.success(f"Wrote encoder secrets to {str(args.secrets_file.absolute())}")
-    logger.success(f"Wrote decoder secrets to {str(decoder_secret_path.absolute())}")
+    logger.success(f"Wrote decoder secrets to {decoder_secret_path}")
 
     return secrets
 
@@ -154,9 +150,9 @@ def main():
     # logger.debug(f"Generated secrets: {secrets}")
 
     # Open the file, erroring if the file exists unless the --force arg is provided
-    # with open(args.secrets_file, "wb" if args.force else "xb") as f:
+    with open(args.secrets_file, "wb" if args.force else "xb") as f:
         # Dump the secrets to the file
-        # f.write(secrets)
+        f.write(secrets)
 
     # decoder_secret_path = args.secrets_file.with_suffix('.h')
 
@@ -165,7 +161,7 @@ def main():
         # f.write(decoder_file.encode('ascii'))
 
     # For your own debugging. Feel free to remove
-    # logger.success(f"Wrote encoder secrets to {str(args.secrets_file.absolute())}")
+    logger.success(f"Wrote encoder secrets to {str(args.secrets_file.absolute())}")
     # logger.success(f"Wrote decoder secrets to {str(decoder_secret_path.absolute())}")
 
 

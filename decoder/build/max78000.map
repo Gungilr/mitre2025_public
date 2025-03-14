@@ -131,7 +131,7 @@ Archive member included to satisfy reference by file (symbol)
 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
                               /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fread.o) (__sinit)
 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o)
-                              /decoder/build/simple_flash.o (puts)
+                              /decoder/build/decoder.o (puts)
 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fvwrite.o)
                               /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o) (__sfvwrite_r)
 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-exit.o)
@@ -2542,6 +2542,10 @@ Discarded input sections
  .text          0x00000000        0x0 /decoder/build/led.o
  .data          0x00000000        0x0 /decoder/build/led.o
  .bss           0x00000000        0x0 /decoder/build/led.o
+ .rodata.LED_On.str1.4
+                0x00000000       0x43 /decoder/build/led.o
+ .text.LED_On   0x00000000       0x40 /decoder/build/led.o
+ .text.LED_Off  0x00000000       0x40 /decoder/build/led.o
  .text.LED_Toggle
                 0x00000000       0x40 /decoder/build/led.o
  .text          0x00000000        0x0 /decoder/build/pb.o
@@ -3474,7 +3478,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xc4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_me17.o)
  .debug_macro   0x00000000       0x5a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_me17.o)
  .debug_line    0x00000000      0x5aa /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_me17.o)
- .debug_str     0x00000000    0x1803a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_me17.o)
+ .debug_str     0x00000000    0x18034 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_me17.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_me17.o)
  .debug_frame   0x00000000      0x194 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_me17.o)
  .ARM.attributes
@@ -3638,7 +3642,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xc4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_revb.o)
  .debug_macro   0x00000000       0x5a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_revb.o)
  .debug_line    0x00000000      0xed8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_revb.o)
- .debug_str     0x00000000    0x1d9f8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_revb.o)
+ .debug_str     0x00000000    0x1d9f2 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_revb.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_revb.o)
  .debug_frame   0x00000000      0x230 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(aes_revb.o)
  .ARM.attributes
@@ -3752,7 +3756,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x1b6 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
  .debug_macro   0x00000000      0x1a8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
  .debug_line    0x00000000      0x506 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
- .debug_str     0x00000000    0x1adff /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
+ .debug_str     0x00000000    0x1adf9 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
  .debug_frame   0x00000000       0xac /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_ai85.o)
  .ARM.attributes
@@ -3862,7 +3866,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xb0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
  .debug_macro   0x00000000       0x20 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
  .debug_line    0x00000000      0x4f2 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
- .debug_str     0x00000000    0x194ac /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
+ .debug_str     0x00000000    0x194a6 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
  .debug_frame   0x00000000       0xa0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(cameraif_reva.o)
  .ARM.attributes
@@ -3974,7 +3978,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x4d1 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
  .debug_macro   0x00000000      0x71c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
  .debug_line    0x00000000      0x55f /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
- .debug_str     0x00000000    0x1d1fa /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
+ .debug_str     0x00000000    0x1d1f4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
  .debug_frame   0x00000000      0x1ec /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_me17.o)
  .ARM.attributes
@@ -4101,7 +4105,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x4d1 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
  .debug_macro   0x00000000      0x71c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
  .debug_line    0x00000000      0xdaa /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
- .debug_str     0x00000000    0x1cb66 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
+ .debug_str     0x00000000    0x1cb60 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
  .debug_frame   0x00000000      0x2fc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(dma_reva.o)
  .ARM.attributes
@@ -4352,6 +4356,8 @@ Discarded input sections
                 0x00000000       0x34 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
  .text.MXC_GPIO_InGet
                 0x00000000       0x30 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+ .text.MXC_GPIO_OutClr
+                0x00000000       0x30 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
  .text.MXC_GPIO_OutGet
                 0x00000000       0x30 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
  .text.MXC_GPIO_OutPut
@@ -4424,6 +4430,8 @@ Discarded input sections
  .bss           0x00000000        0x0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
  .text.MXC_GPIO_RevA_InGet
                 0x00000000        0x8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+ .text.MXC_GPIO_RevA_OutClr
+                0x00000000        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
  .text.MXC_GPIO_RevA_OutGet
                 0x00000000        0x8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
  .text.MXC_GPIO_RevA_OutPut
@@ -4677,7 +4685,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x71c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
  .debug_macro   0x00000000       0x3a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
  .debug_line    0x00000000      0xad0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
- .debug_str     0x00000000    0x26d9f /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
+ .debug_str     0x00000000    0x26d99 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
  .debug_frame   0x00000000      0x3a8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_me17.o)
  .ARM.attributes
@@ -4904,7 +4912,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x71c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
  .debug_macro   0x00000000       0x3a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
  .debug_line    0x00000000     0x29f2 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
- .debug_str     0x00000000    0x26096 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
+ .debug_str     0x00000000    0x26090 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
  .debug_frame   0x00000000      0x57c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(i2c_reva.o)
  .ARM.attributes
@@ -5156,7 +5164,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x238 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_ai85.o)
  .debug_macro   0x00000000      0x72e /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_ai85.o)
  .debug_line    0x00000000      0x7ee /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_ai85.o)
- .debug_str     0x00000000    0x237d1 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_ai85.o)
+ .debug_str     0x00000000    0x237cb /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_ai85.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_ai85.o)
  .debug_frame   0x00000000      0x1ac /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_ai85.o)
  .ARM.attributes
@@ -5314,7 +5322,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x238 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
  .debug_macro   0x00000000      0x72e /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
  .debug_line    0x00000000      0x969 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
- .debug_str     0x00000000    0x20f69 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
+ .debug_str     0x00000000    0x20f63 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
  .debug_frame   0x00000000      0x1c8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pt_reva.o)
  .ARM.attributes
@@ -5510,7 +5518,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x502 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_me17.o)
  .debug_macro   0x00000000      0x4d1 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_me17.o)
  .debug_line    0x00000000      0xc80 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_me17.o)
- .debug_str     0x00000000    0x22437 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_me17.o)
+ .debug_str     0x00000000    0x22431 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_me17.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_me17.o)
  .debug_frame   0x00000000      0x320 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_me17.o)
  .ARM.attributes
@@ -5721,7 +5729,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x4d1 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_reva1.o)
  .debug_macro   0x00000000      0x71c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_reva1.o)
  .debug_line    0x00000000     0x21ae /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_reva1.o)
- .debug_str     0x00000000    0x26146 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_reva1.o)
+ .debug_str     0x00000000    0x26140 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_reva1.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_reva1.o)
  .debug_frame   0x00000000      0x45c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(spi_reva1.o)
  .ARM.attributes
@@ -5855,7 +5863,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x5a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_revb.o)
  .debug_macro   0x00000000       0xc4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_revb.o)
  .debug_line    0x00000000      0x708 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_revb.o)
- .debug_str     0x00000000    0x18bd2 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_revb.o)
+ .debug_str     0x00000000    0x18bcc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_revb.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_revb.o)
  .debug_frame   0x00000000      0x10c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_revb.o)
  .ARM.attributes
@@ -6251,7 +6259,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xdc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
  .debug_macro   0x00000000       0x22 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
  .debug_line    0x00000000      0x2eb /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
- .debug_str     0x00000000    0x14802 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
+ .debug_str     0x00000000    0x147fc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
  .debug_frame   0x00000000       0x30 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_lock.o)
  .ARM.attributes
@@ -6458,7 +6466,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x5a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_ai85.o)
  .debug_macro   0x00000000       0xc4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_ai85.o)
  .debug_line    0x00000000      0x37f /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_ai85.o)
- .debug_str     0x00000000    0x15dda /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_ai85.o)
+ .debug_str     0x00000000    0x15dd4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_ai85.o)
  .comment       0x00000000       0x27 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_ai85.o)
  .debug_frame   0x00000000       0xb0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(trng_ai85.o)
  .ARM.attributes
@@ -7363,7 +7371,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  *(.rom_vector)
  *(.rom_handlers*)
 
-.text           0x1000e000    0x1bff4
+.text           0x1000e000    0x1bed4
                 0x1000e000                        _text = .
  *(.isr_vector)
  .isr_vector    0x1000e000      0x1e0 /decoder/build/startup_firmware.o
@@ -7379,991 +7387,980 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
                 0x1000e290       0x54 /decoder/build/crypto.o
                 0x1000e290                decrypt_frame
  .text.decrypt_subscription_update
-                0x1000e2e4      0x14c /decoder/build/crypto.o
+                0x1000e2e4      0x148 /decoder/build/crypto.o
                 0x1000e2e4                decrypt_subscription_update
  .text.ed25519_verify
-                0x1000e430       0x50 /decoder/build/crypto.o
-                0x1000e430                ed25519_verify
+                0x1000e42c       0x50 /decoder/build/crypto.o
+                0x1000e42c                ed25519_verify
  .text.init.part.0
-                0x1000e480      0x118 /decoder/build/decoder.o
+                0x1000e47c      0x118 /decoder/build/decoder.o
  .text.key_derive
-                0x1000e598      0x39c /decoder/build/decoder.o
-                0x1000e598                key_derive
+                0x1000e594      0x39c /decoder/build/decoder.o
+                0x1000e594                key_derive
  .text.list_channels
-                0x1000e934       0x78 /decoder/build/decoder.o
-                0x1000e934                list_channels
+                0x1000e930       0x78 /decoder/build/decoder.o
+                0x1000e930                list_channels
  .text.update_subscription
-                0x1000e9ac      0x154 /decoder/build/decoder.o
-                0x1000e9ac                update_subscription
- .text.decode   0x1000eb00      0x174 /decoder/build/decoder.o
-                0x1000eb00                decode
- .text.init     0x1000ec74       0x2c /decoder/build/decoder.o
-                0x1000ec74                init
+                0x1000e9a8      0x148 /decoder/build/decoder.o
+                0x1000e9a8                update_subscription
+ .text.decode   0x1000eaf0      0x164 /decoder/build/decoder.o
+                0x1000eaf0                decode
+ .text.init     0x1000ec54       0x20 /decoder/build/decoder.o
+                0x1000ec54                init
  .text.startup.main
-                0x1000eca0      0x154 /decoder/build/decoder.o
-                0x1000eca0                main
+                0x1000ec74       0xf0 /decoder/build/decoder.o
+                0x1000ec74                main
  .text.read_bytes
-                0x1000edf4       0x74 /decoder/build/host_messaging.o
-                0x1000edf4                read_bytes
+                0x1000ed64       0x74 /decoder/build/host_messaging.o
+                0x1000ed64                read_bytes
  .text.read_ack
-                0x1000ee68       0x40 /decoder/build/host_messaging.o
-                0x1000ee68                read_ack
+                0x1000edd8       0x40 /decoder/build/host_messaging.o
+                0x1000edd8                read_ack
  .text.write_bytes
-                0x1000eea8       0x68 /decoder/build/host_messaging.o
-                0x1000eea8                write_bytes
+                0x1000ee18       0x68 /decoder/build/host_messaging.o
+                0x1000ee18                write_bytes
  .text.write_packet
-                0x1000ef10       0x7c /decoder/build/host_messaging.o
-                0x1000ef10                write_packet
+                0x1000ee80       0x7c /decoder/build/host_messaging.o
+                0x1000ee80                write_packet
  .text.read_packet
-                0x1000ef8c       0xb4 /decoder/build/host_messaging.o
-                0x1000ef8c                read_packet
+                0x1000eefc       0xb4 /decoder/build/host_messaging.o
+                0x1000eefc                read_packet
  .text.flash_simple_irq
-                0x1000f040       0x30 /decoder/build/simple_flash.o
-                0x1000f040                flash_simple_irq
+                0x1000efb0       0x30 /decoder/build/simple_flash.o
+                0x1000efb0                flash_simple_irq
  .text.flash_simple_init
-                0x1000f070       0x30 /decoder/build/simple_flash.o
-                0x1000f070                flash_simple_init
+                0x1000efe0       0x30 /decoder/build/simple_flash.o
+                0x1000efe0                flash_simple_init
  .text.flash_simple_erase_page
-                0x1000f0a0        0x4 /decoder/build/simple_flash.o
-                0x1000f0a0                flash_simple_erase_page
+                0x1000f010        0x4 /decoder/build/simple_flash.o
+                0x1000f010                flash_simple_erase_page
  .text.flash_simple_read
-                0x1000f0a4        0x4 /decoder/build/simple_flash.o
-                0x1000f0a4                flash_simple_read
+                0x1000f014        0x4 /decoder/build/simple_flash.o
+                0x1000f014                flash_simple_read
  .text.flash_simple_write
-                0x1000f0a8        0xc /decoder/build/simple_flash.o
-                0x1000f0a8                flash_simple_write
+                0x1000f018        0xc /decoder/build/simple_flash.o
+                0x1000f018                flash_simple_write
  .text.flash_reset
-                0x1000f0b4       0x20 /decoder/build/simple_flash.o
-                0x1000f0b4                flash_reset
+                0x1000f024       0x20 /decoder/build/simple_flash.o
+                0x1000f024                flash_reset
  .text.uart_init
-                0x1000f0d4       0x2c /decoder/build/simple_uart.o
-                0x1000f0d4                uart_init
+                0x1000f044       0x2c /decoder/build/simple_uart.o
+                0x1000f044                uart_init
  .text.uart_readbyte
-                0x1000f100        0xc /decoder/build/simple_uart.o
-                0x1000f100                uart_readbyte
+                0x1000f070        0xc /decoder/build/simple_uart.o
+                0x1000f070                uart_readbyte
  .text.uart_writebyte
-                0x1000f10c       0x10 /decoder/build/simple_uart.o
-                0x1000f10c                uart_writebyte
+                0x1000f07c       0x10 /decoder/build/simple_uart.o
+                0x1000f07c                uart_writebyte
  .text.wc_Chacha_wordtobyte
-                0x1000f11c      0x24c /decoder/build/chacha.o
+                0x1000f08c      0x24c /decoder/build/chacha.o
  .text.wc_Chacha_SetIV
-                0x1000f368       0x38 /decoder/build/chacha.o
-                0x1000f368                wc_Chacha_SetIV
+                0x1000f2d8       0x38 /decoder/build/chacha.o
+                0x1000f2d8                wc_Chacha_SetIV
  .text.wc_Chacha_SetKey
-                0x1000f3a0      0x100 /decoder/build/chacha.o
-                0x1000f3a0                wc_Chacha_SetKey
+                0x1000f310      0x100 /decoder/build/chacha.o
+                0x1000f310                wc_Chacha_SetKey
  .text.wc_Chacha_Process
-                0x1000f4a0      0x300 /decoder/build/chacha.o
-                0x1000f4a0                wc_Chacha_Process
+                0x1000f410      0x300 /decoder/build/chacha.o
+                0x1000f410                wc_Chacha_Process
  .text.wc_ChaCha20Poly1305_Init
-                0x1000f7a0       0x9c /decoder/build/chacha20_poly1305.o
-                0x1000f7a0                wc_ChaCha20Poly1305_Init
+                0x1000f710       0x9c /decoder/build/chacha20_poly1305.o
+                0x1000f710                wc_ChaCha20Poly1305_Init
  .text.wc_ChaCha20Poly1305_UpdateAad
-                0x1000f83c       0x6c /decoder/build/chacha20_poly1305.o
-                0x1000f83c                wc_ChaCha20Poly1305_UpdateAad
+                0x1000f7ac       0x6c /decoder/build/chacha20_poly1305.o
+                0x1000f7ac                wc_ChaCha20Poly1305_UpdateAad
  .text.wc_ChaCha20Poly1305_UpdateData
-                0x1000f8a8       0xb4 /decoder/build/chacha20_poly1305.o
-                0x1000f8a8                wc_ChaCha20Poly1305_UpdateData
+                0x1000f818       0xb4 /decoder/build/chacha20_poly1305.o
+                0x1000f818                wc_ChaCha20Poly1305_UpdateData
  .text.wc_ChaCha20Poly1305_Final
-                0x1000f95c       0x80 /decoder/build/chacha20_poly1305.o
-                0x1000f95c                wc_ChaCha20Poly1305_Final
+                0x1000f8cc       0x80 /decoder/build/chacha20_poly1305.o
+                0x1000f8cc                wc_ChaCha20Poly1305_Final
  .text.wc_ChaCha20Poly1305_Decrypt
-                0x1000f9dc       0x94 /decoder/build/chacha20_poly1305.o
-                0x1000f9dc                wc_ChaCha20Poly1305_Decrypt
+                0x1000f94c       0x94 /decoder/build/chacha20_poly1305.o
+                0x1000f94c                wc_ChaCha20Poly1305_Decrypt
  .text.ed25519_hash
-                0x1000fa70       0x5c /decoder/build/ed25519.o
+                0x1000f9e0       0x5c /decoder/build/ed25519.o
  .text.wc_ed25519_make_public
-                0x1000facc       0x78 /decoder/build/ed25519.o
-                0x1000facc                wc_ed25519_make_public
+                0x1000fa3c       0x78 /decoder/build/ed25519.o
+                0x1000fa3c                wc_ed25519_make_public
  .text.wc_ed25519_verify_msg_ex
-                0x1000fb44      0x19c /decoder/build/ed25519.o
-                0x1000fb44                wc_ed25519_verify_msg_ex
+                0x1000fab4      0x19c /decoder/build/ed25519.o
+                0x1000fab4                wc_ed25519_verify_msg_ex
  .text.wc_ed25519_verify_msg
-                0x1000fce0       0x20 /decoder/build/ed25519.o
-                0x1000fce0                wc_ed25519_verify_msg
+                0x1000fc50       0x20 /decoder/build/ed25519.o
+                0x1000fc50                wc_ed25519_verify_msg
  .text.wc_ed25519_init
-                0x1000fd00       0x1c /decoder/build/ed25519.o
-                0x1000fd00                wc_ed25519_init
+                0x1000fc70       0x1c /decoder/build/ed25519.o
+                0x1000fc70                wc_ed25519_init
  .text.wc_ed25519_check_key
-                0x1000fd1c       0x80 /decoder/build/ed25519.o
-                0x1000fd1c                wc_ed25519_check_key
+                0x1000fc8c       0x80 /decoder/build/ed25519.o
+                0x1000fc8c                wc_ed25519_check_key
  .text.wc_ed25519_import_public_ex
-                0x1000fd9c       0xd8 /decoder/build/ed25519.o
-                0x1000fd9c                wc_ed25519_import_public_ex
+                0x1000fd0c       0xd8 /decoder/build/ed25519.o
+                0x1000fd0c                wc_ed25519_import_public_ex
  .text.wc_ed25519_import_public
-                0x1000fe74        0x8 /decoder/build/ed25519.o
-                0x1000fe74                wc_ed25519_import_public
- .text.load_3   0x1000fe7c       0x14 /decoder/build/fe_operations.o
-                0x1000fe7c                load_3
- .text.load_4   0x1000fe90        0x8 /decoder/build/fe_operations.o
-                0x1000fe90                load_4
- .text.fe_1     0x1000fe98       0x1c /decoder/build/fe_operations.o
-                0x1000fe98                fe_1
- .text.fe_0     0x1000feb4       0x18 /decoder/build/fe_operations.o
-                0x1000feb4                fe_0
- .text.fe_init  0x1000fecc        0x4 /decoder/build/fe_operations.o
-                0x1000fecc                fe_init
- .text.fe_sq    0x1000fed0      0x424 /decoder/build/fe_operations.o
-                0x1000fed0                fe_sq
- .text.fe_add   0x100102f4       0x64 /decoder/build/fe_operations.o
-                0x100102f4                fe_add
+                0x1000fde4        0x8 /decoder/build/ed25519.o
+                0x1000fde4                wc_ed25519_import_public
+ .text.load_3   0x1000fdec       0x14 /decoder/build/fe_operations.o
+                0x1000fdec                load_3
+ .text.load_4   0x1000fe00        0x8 /decoder/build/fe_operations.o
+                0x1000fe00                load_4
+ .text.fe_1     0x1000fe08       0x1c /decoder/build/fe_operations.o
+                0x1000fe08                fe_1
+ .text.fe_0     0x1000fe24       0x18 /decoder/build/fe_operations.o
+                0x1000fe24                fe_0
+ .text.fe_init  0x1000fe3c        0x4 /decoder/build/fe_operations.o
+                0x1000fe3c                fe_init
+ .text.fe_sq    0x1000fe40      0x424 /decoder/build/fe_operations.o
+                0x1000fe40                fe_sq
+ .text.fe_add   0x10010264       0x64 /decoder/build/fe_operations.o
+                0x10010264                fe_add
  .text.fe_tobytes
-                0x10010358      0x1fc /decoder/build/fe_operations.o
-                0x10010358                fe_tobytes
- .text.fe_sub   0x10010554       0x6c /decoder/build/fe_operations.o
-                0x10010554                fe_sub
+                0x100102c8      0x1fc /decoder/build/fe_operations.o
+                0x100102c8                fe_tobytes
+ .text.fe_sub   0x100104c4       0x6c /decoder/build/fe_operations.o
+                0x100104c4                fe_sub
  .text.fe_frombytes
-                0x100105c0      0x20c /decoder/build/fe_operations.o
-                0x100105c0                fe_frombytes
- .text.fe_copy  0x100107cc       0x30 /decoder/build/fe_operations.o
-                0x100107cc                fe_copy
- .text.fe_mul   0x100107fc      0x630 /decoder/build/fe_operations.o
-                0x100107fc                fe_mul
+                0x10010530      0x20c /decoder/build/fe_operations.o
+                0x10010530                fe_frombytes
+ .text.fe_copy  0x1001073c       0x30 /decoder/build/fe_operations.o
+                0x1001073c                fe_copy
+ .text.fe_mul   0x1001076c      0x630 /decoder/build/fe_operations.o
+                0x1001076c                fe_mul
  .text.fe_invert
-                0x10010e2c      0x148 /decoder/build/fe_operations.o
-                0x10010e2c                fe_invert
+                0x10010d9c      0x148 /decoder/build/fe_operations.o
+                0x10010d9c                fe_invert
  .text.fe_cswap
-                0x10010f74      0x118 /decoder/build/fe_operations.o
-                0x10010f74                fe_cswap
- .text.fe_sq2   0x1001108c      0x440 /decoder/build/fe_operations.o
-                0x1001108c                fe_sq2
+                0x10010ee4      0x118 /decoder/build/fe_operations.o
+                0x10010ee4                fe_cswap
+ .text.fe_sq2   0x10010ffc      0x440 /decoder/build/fe_operations.o
+                0x10010ffc                fe_sq2
  .text.fe_pow22523
-                0x100114cc      0x144 /decoder/build/fe_operations.o
-                0x100114cc                fe_pow22523
- .text.fe_neg   0x10011610       0x4c /decoder/build/fe_operations.o
-                0x10011610                fe_neg
+                0x1001143c      0x144 /decoder/build/fe_operations.o
+                0x1001143c                fe_pow22523
+ .text.fe_neg   0x10011580       0x4c /decoder/build/fe_operations.o
+                0x10011580                fe_neg
  .text.fe_isnonzero
-                0x1001165c       0x38 /decoder/build/fe_operations.o
-                0x1001165c                fe_isnonzero
+                0x100115cc       0x38 /decoder/build/fe_operations.o
+                0x100115cc                fe_isnonzero
  .text.fe_isnegative
-                0x10011694       0x1c /decoder/build/fe_operations.o
-                0x10011694                fe_isnegative
- .text.fe_cmov  0x100116b0       0xa8 /decoder/build/fe_operations.o
-                0x100116b0                fe_cmov
- .text.slide    0x10011758       0xac /decoder/build/ge_operations.o
+                0x10011604       0x1c /decoder/build/fe_operations.o
+                0x10011604                fe_isnegative
+ .text.fe_cmov  0x10011620       0xa8 /decoder/build/fe_operations.o
+                0x10011620                fe_cmov
+ .text.slide    0x100116c8       0xac /decoder/build/ge_operations.o
  .text.ge_select
-                0x10011804      0x20c /decoder/build/ge_operations.o
+                0x10011774      0x20c /decoder/build/ge_operations.o
  .text.sc_reduce
-                0x10011a10      0xdb8 /decoder/build/ge_operations.o
-                0x10011a10                sc_reduce
+                0x10011980      0xdb8 /decoder/build/ge_operations.o
+                0x10011980                sc_reduce
  .text.ge_scalarmult_base
-                0x100127c8      0x3e8 /decoder/build/ge_operations.o
-                0x100127c8                ge_scalarmult_base
+                0x10012738      0x3e8 /decoder/build/ge_operations.o
+                0x10012738                ge_scalarmult_base
  .text.ge_double_scalarmult_vartime
-                0x10012bb0      0xa44 /decoder/build/ge_operations.o
-                0x10012bb0                ge_double_scalarmult_vartime
+                0x10012b20      0xa44 /decoder/build/ge_operations.o
+                0x10012b20                ge_double_scalarmult_vartime
  .text.ge_frombytes_negate_vartime
-                0x100135f4      0x104 /decoder/build/ge_operations.o
-                0x100135f4                ge_frombytes_negate_vartime
+                0x10013564      0x104 /decoder/build/ge_operations.o
+                0x10013564                ge_frombytes_negate_vartime
  .text.ge_tobytes
-                0x100136f8       0x40 /decoder/build/ge_operations.o
-                0x100136f8                ge_tobytes
+                0x10013668       0x40 /decoder/build/ge_operations.o
+                0x10013668                ge_tobytes
  .text.ge_compress_key
-                0x10013738       0x88 /decoder/build/ge_operations.o
-                0x10013738                ge_compress_key
+                0x100136a8       0x88 /decoder/build/ge_operations.o
+                0x100136a8                ge_compress_key
  .text.HmacKeyInnerHash
-                0x100137c0       0x60 /decoder/build/hmac.o
+                0x10013730       0x60 /decoder/build/hmac.o
  .text._InitHmac
-                0x10013820       0x60 /decoder/build/hmac.o
-                0x10013820                _InitHmac
+                0x10013790       0x60 /decoder/build/hmac.o
+                0x10013790                _InitHmac
  .text.wc_HmacUpdate
-                0x10013880       0x80 /decoder/build/hmac.o
-                0x10013880                wc_HmacUpdate
+                0x100137f0       0x80 /decoder/build/hmac.o
+                0x100137f0                wc_HmacUpdate
  .text.wc_HmacFinal
-                0x10013900      0x128 /decoder/build/hmac.o
-                0x10013900                wc_HmacFinal
+                0x10013870      0x128 /decoder/build/hmac.o
+                0x10013870                wc_HmacFinal
  .text.wc_HmacFree
-                0x10013a28       0x44 /decoder/build/hmac.o
-                0x10013a28                wc_HmacFree
+                0x10013998       0x44 /decoder/build/hmac.o
+                0x10013998                wc_HmacFree
  .text.wc_HmacSetKey_ex
-                0x10013a6c      0x17c /decoder/build/hmac.o
-                0x10013a6c                wc_HmacSetKey_ex
+                0x100139dc      0x17c /decoder/build/hmac.o
+                0x100139dc                wc_HmacSetKey_ex
  .text.wc_HKDF_Extract_ex
-                0x10013be8       0xac /decoder/build/hmac.o
-                0x10013be8                wc_HKDF_Extract_ex
+                0x10013b58       0xac /decoder/build/hmac.o
+                0x10013b58                wc_HKDF_Extract_ex
  .text.wc_HKDF_Expand_ex
-                0x10013c94      0x12c /decoder/build/hmac.o
-                0x10013c94                wc_HKDF_Expand_ex
- .text.wc_HKDF  0x10013dc0       0x74 /decoder/build/hmac.o
-                0x10013dc0                wc_HKDF
+                0x10013c04      0x12c /decoder/build/hmac.o
+                0x10013c04                wc_HKDF_Expand_ex
+ .text.wc_HKDF  0x10013d30       0x74 /decoder/build/hmac.o
+                0x10013d30                wc_HKDF
  .text.Transform
-                0x10013e34      0x728 /decoder/build/md5.o
+                0x10013da4      0x728 /decoder/build/md5.o
  .text.wc_InitMd5_ex
-                0x1001455c       0x40 /decoder/build/md5.o
-                0x1001455c                wc_InitMd5_ex
+                0x100144cc       0x40 /decoder/build/md5.o
+                0x100144cc                wc_InitMd5_ex
  .text.wc_Md5Update
-                0x1001459c      0x104 /decoder/build/md5.o
-                0x1001459c                wc_Md5Update
+                0x1001450c      0x104 /decoder/build/md5.o
+                0x1001450c                wc_Md5Update
  .text.wc_Md5Final
-                0x100146a0       0xb8 /decoder/build/md5.o
-                0x100146a0                wc_Md5Final
+                0x10014610       0xb8 /decoder/build/md5.o
+                0x10014610                wc_Md5Final
  .text.wc_Md5Free
-                0x10014758        0x4 /decoder/build/md5.o
-                0x10014758                wc_Md5Free
+                0x100146c8        0x4 /decoder/build/md5.o
+                0x100146c8                wc_Md5Free
  .text.poly1305_blocks
-                0x1001475c      0x1b0 /decoder/build/poly1305.o
+                0x100146cc      0x1b0 /decoder/build/poly1305.o
  .text.wc_Poly1305SetKey
-                0x1001490c       0x74 /decoder/build/poly1305.o
-                0x1001490c                wc_Poly1305SetKey
+                0x1001487c       0x74 /decoder/build/poly1305.o
+                0x1001487c                wc_Poly1305SetKey
  .text.wc_Poly1305Final
-                0x10014980      0x168 /decoder/build/poly1305.o
-                0x10014980                wc_Poly1305Final
+                0x100148f0      0x168 /decoder/build/poly1305.o
+                0x100148f0                wc_Poly1305Final
  .text.wc_Poly1305Update
-                0x10014ae8       0xb0 /decoder/build/poly1305.o
-                0x10014ae8                wc_Poly1305Update
+                0x10014a58       0xb0 /decoder/build/poly1305.o
+                0x10014a58                wc_Poly1305Update
  .text.wc_Poly1305_Pad
-                0x10014b98       0x40 /decoder/build/poly1305.o
-                0x10014b98                wc_Poly1305_Pad
+                0x10014b08       0x40 /decoder/build/poly1305.o
+                0x10014b08                wc_Poly1305_Pad
  .text.wc_Poly1305_EncodeSizes
-                0x10014bd8       0x28 /decoder/build/poly1305.o
-                0x10014bd8                wc_Poly1305_EncodeSizes
+                0x10014b48       0x28 /decoder/build/poly1305.o
+                0x10014b48                wc_Poly1305_EncodeSizes
  .text.Transform
-                0x10014c00      0xe60 /decoder/build/sha.o
+                0x10014b70      0xe60 /decoder/build/sha.o
  .text.wc_InitSha_ex
-                0x10015a60       0x48 /decoder/build/sha.o
-                0x10015a60                wc_InitSha_ex
+                0x100159d0       0x48 /decoder/build/sha.o
+                0x100159d0                wc_InitSha_ex
  .text.wc_ShaUpdate
-                0x10015aa8      0x140 /decoder/build/sha.o
-                0x10015aa8                wc_ShaUpdate
+                0x10015a18      0x140 /decoder/build/sha.o
+                0x10015a18                wc_ShaUpdate
  .text.wc_ShaFinal
-                0x10015be8      0x124 /decoder/build/sha.o
-                0x10015be8                wc_ShaFinal
+                0x10015b58      0x124 /decoder/build/sha.o
+                0x10015b58                wc_ShaFinal
  .text.wc_ShaFree
-                0x10015d0c        0x4 /decoder/build/sha.o
-                0x10015d0c                wc_ShaFree
+                0x10015c7c        0x4 /decoder/build/sha.o
+                0x10015c7c                wc_ShaFree
  .text.Transform_Sha256
-                0x10015d10      0x33c /decoder/build/sha256.o
+                0x10015c80      0x33c /decoder/build/sha256.o
  .text.wc_InitSha256_ex
-                0x1001604c       0x5c /decoder/build/sha256.o
-                0x1001604c                wc_InitSha256_ex
+                0x10015fbc       0x5c /decoder/build/sha256.o
+                0x10015fbc                wc_InitSha256_ex
  .text.wc_Sha256Update
-                0x100160a8      0x10c /decoder/build/sha256.o
-                0x100160a8                wc_Sha256Update
+                0x10016018      0x10c /decoder/build/sha256.o
+                0x10016018                wc_Sha256Update
  .text.wc_Sha256Final
-                0x100161b4      0x13c /decoder/build/sha256.o
-                0x100161b4                wc_Sha256Final
+                0x10016124      0x13c /decoder/build/sha256.o
+                0x10016124                wc_Sha256Final
  .text.wc_InitSha256
-                0x100162f0       0x5c /decoder/build/sha256.o
-                0x100162f0                wc_InitSha256
+                0x10016260       0x5c /decoder/build/sha256.o
+                0x10016260                wc_InitSha256
  .text.wc_Sha256Free
-                0x1001634c       0x14 /decoder/build/sha256.o
-                0x1001634c                wc_Sha256Free
+                0x100162bc       0x14 /decoder/build/sha256.o
+                0x100162bc                wc_Sha256Free
  .text.InitSha512
-                0x10016360       0xb8 /decoder/build/sha512.o
+                0x100162d0       0xb8 /decoder/build/sha512.o
  .text._Transform_Sha512
-                0x10016418     0x1ce8 /decoder/build/sha512.o
+                0x10016388     0x1ce8 /decoder/build/sha512.o
  .text.Sha512_Family_Final
-                0x10018100      0x138 /decoder/build/sha512.o
+                0x10018070      0x138 /decoder/build/sha512.o
  .text.wc_InitSha512_ex
-                0x10018238       0xb8 /decoder/build/sha512.o
-                0x10018238                wc_InitSha512_ex
+                0x100181a8       0xb8 /decoder/build/sha512.o
+                0x100181a8                wc_InitSha512_ex
  .text.wc_Sha512Update
-                0x100182f0      0x120 /decoder/build/sha512.o
-                0x100182f0                wc_Sha512Update
+                0x10018260      0x120 /decoder/build/sha512.o
+                0x10018260                wc_Sha512Update
  .text.wc_Sha512Final
-                0x10018410        0xc /decoder/build/sha512.o
-                0x10018410                wc_Sha512Final
+                0x10018380        0xc /decoder/build/sha512.o
+                0x10018380                wc_Sha512Final
  .text.wc_Sha512Free
-                0x1001841c       0x14 /decoder/build/sha512.o
-                0x1001841c                wc_Sha512Free
+                0x1001838c       0x14 /decoder/build/sha512.o
+                0x1001838c                wc_Sha512Free
  .text.mxc_assert
-                0x10018430       0x10 /decoder/build/board.o
-                0x10018430                mxc_assert
+                0x100183a0       0x10 /decoder/build/board.o
+                0x100183a0                mxc_assert
  .text.GPIO0_IRQHandler
-                0x10018440        0x8 /decoder/build/board.o
-                0x10018440                GPIO0_IRQHandler
+                0x100183b0        0x8 /decoder/build/board.o
+                0x100183b0                GPIO0_IRQHandler
  .text.GPIO1_IRQHandler
-                0x10018448        0x8 /decoder/build/board.o
-                0x10018448                GPIO1_IRQHandler
+                0x100183b8        0x8 /decoder/build/board.o
+                0x100183b8                GPIO1_IRQHandler
  .text.Board_Init
-                0x10018450       0x6c /decoder/build/board.o
-                0x10018450                Board_Init
+                0x100183c0       0x6c /decoder/build/board.o
+                0x100183c0                Board_Init
  .text.NMI_Handler
-                0x100184bc        0x4 /decoder/build/board.o
-                0x100184bc                NMI_Handler
- .text._close   0x100184c0        0x8 /decoder/build/stdio.o
-                0x100184c0                _close
- .text._isatty  0x100184c8        0x8 /decoder/build/stdio.o
-                0x100184c8                _isatty
- .text._lseek   0x100184d0        0x8 /decoder/build/stdio.o
-                0x100184d0                _lseek
- .text._fstat   0x100184d8        0x8 /decoder/build/stdio.o
-                0x100184d8                _fstat
- .text._read    0x100184e0       0x5c /decoder/build/stdio.o
-                0x100184e0                _read
- .text._write   0x1001853c       0x54 /decoder/build/stdio.o
-                0x1001853c                _write
+                0x1001842c        0x4 /decoder/build/board.o
+                0x1001842c                NMI_Handler
+ .text._close   0x10018430        0x8 /decoder/build/stdio.o
+                0x10018430                _close
+ .text._isatty  0x10018438        0x8 /decoder/build/stdio.o
+                0x10018438                _isatty
+ .text._lseek   0x10018440        0x8 /decoder/build/stdio.o
+                0x10018440                _lseek
+ .text._fstat   0x10018448        0x8 /decoder/build/stdio.o
+                0x10018448                _fstat
+ .text._read    0x10018450       0x5c /decoder/build/stdio.o
+                0x10018450                _read
+ .text._write   0x100184ac       0x54 /decoder/build/stdio.o
+                0x100184ac                _write
  .text.LED_Init
-                0x10018590       0x40 /decoder/build/led.o
-                0x10018590                LED_Init
- .text.LED_On   0x100185d0       0x40 /decoder/build/led.o
-                0x100185d0                LED_On
- .text.LED_Off  0x10018610       0x40 /decoder/build/led.o
-                0x10018610                LED_Off
- .text.PB_Init  0x10018650       0x38 /decoder/build/pb.o
-                0x10018650                PB_Init
- .text          0x10018688      0x148 /decoder/build/startup_firmware.o
-                0x10018688                Reset_Handler
-                0x100186c6                HardFault_Handler
-                0x100186c8                MemManage_Handler
-                0x100186ca                BusFault_Handler
-                0x100186cc                UsageFault_Handler
-                0x100186ce                SVC_Handler
-                0x100186d0                DebugMon_Handler
-                0x100186d2                PendSV_Handler
-                0x100186d4                SysTick_Handler
-                0x100186d6                Default_Handler
-                0x100186d8                PF_IRQHandler
-                0x100186da                WDT0_IRQHandler
-                0x100186dc                RSV02_IRQHandler
-                0x100186de                RTC_IRQHandler
-                0x100186e0                TRNG_IRQHandler
-                0x100186e2                TMR0_IRQHandler
-                0x100186e4                TMR1_IRQHandler
-                0x100186e6                TMR2_IRQHandler
-                0x100186e8                TMR3_IRQHandler
-                0x100186ea                TMR4_IRQHandler
-                0x100186ec                TMR5_IRQHandler
-                0x100186ee                RSV11_IRQHandler
-                0x100186f0                RSV12_IRQHandler
-                0x100186f2                I2C0_IRQHandler
-                0x100186f4                UART0_IRQHandler
-                0x100186f6                UART1_IRQHandler
-                0x100186f8                SPI1_IRQHandler
-                0x100186fa                RSV17_IRQHandler
-                0x100186fc                RSV18_IRQHandler
-                0x100186fe                RSV19_IRQHandler
-                0x10018700                ADC_IRQHandler
-                0x10018702                RSV21_IRQHandler
-                0x10018704                RSV22_IRQHandler
-                0x10018706                FLC0_IRQHandler
-                0x1001870c                GPIO2_IRQHandler
-                0x1001870e                RSV27_IRQHandler
-                0x10018710                DMA0_IRQHandler
-                0x10018712                DMA1_IRQHandler
-                0x10018714                DMA2_IRQHandler
-                0x10018716                DMA3_IRQHandler
-                0x10018718                RSV32_IRQHandler
-                0x1001871a                RSV33_IRQHandler
-                0x1001871c                UART2_IRQHandler
-                0x1001871e                RSV35_IRQHandler
-                0x10018720                I2C1_IRQHandler
-                0x10018722                RSV37_IRQHandler
-                0x10018724                RSV38_IRQHandler
-                0x10018726                RSV39_IRQHandler
-                0x10018728                RSV40_IRQHandler
-                0x1001872a                RSV41_IRQHandler
-                0x1001872c                RSV42_IRQHandler
-                0x1001872e                RSV43_IRQHandler
-                0x10018730                RSV44_IRQHandler
-                0x10018732                RSV45_IRQHandler
-                0x10018734                RSV46_IRQHandler
-                0x10018736                RSV47_IRQHandler
-                0x10018738                RSV48_IRQHandler
-                0x1001873a                RSV49_IRQHandler
-                0x1001873c                RSV50_IRQHandler
-                0x1001873e                RSV51_IRQHandler
-                0x10018740                RSV52_IRQHandler
-                0x10018742                WUT_IRQHandler
-                0x10018744                GPIOWAKE_IRQHandler
-                0x10018746                RSV55_IRQHandler
-                0x10018748                SPI0_IRQHandler
-                0x1001874a                WDT1_IRQHandler
-                0x1001874c                RSV58_IRQHandler
-                0x1001874e                PT_IRQHandler
-                0x10018750                RSV60_IRQHandler
-                0x10018752                RSV61_IRQHandler
-                0x10018754                I2C2_IRQHandler
-                0x10018756                RISCV_IRQHandler
-                0x10018758                RSV64_IRQHandler
-                0x1001875a                RSV65_IRQHandler
-                0x1001875c                RSV66_IRQHandler
-                0x1001875e                OWM_IRQHandler
-                0x10018760                RSV68_IRQHandler
-                0x10018762                RSV69_IRQHandler
-                0x10018764                RSV70_IRQHandler
-                0x10018766                RSV71_IRQHandler
-                0x10018768                RSV72_IRQHandler
-                0x1001876a                RSV73_IRQHandler
-                0x1001876c                RSV74_IRQHandler
-                0x1001876e                RSV75_IRQHandler
-                0x10018770                RSV76_IRQHandler
-                0x10018772                RSV77_IRQHandler
-                0x10018774                RSV78_IRQHandler
-                0x10018776                RSV79_IRQHandler
-                0x10018778                RSV80_IRQHandler
-                0x1001877a                RSV81_IRQHandler
-                0x1001877c                ECC_IRQHandler
-                0x1001877e                DVS_IRQHandler
-                0x10018780                SIMO_IRQHandler
-                0x10018782                RSV85_IRQHandler
-                0x10018784                RSV86_IRQHandler
-                0x10018786                RSV87_IRQHandler
-                0x10018788                UART3_IRQHandler
-                0x1001878a                RSV89_IRQHandler
-                0x1001878c                RSV90_IRQHandler
-                0x1001878e                PCIF_IRQHandler
-                0x10018790                RSV92_IRQHandler
-                0x10018792                RSV93_IRQHandler
-                0x10018794                RSV94_IRQHandler
-                0x10018796                RSV95_IRQHandler
-                0x10018798                RSV96_IRQHandler
-                0x1001879a                AES_IRQHandler
-                0x1001879c                RSV98_IRQHandler
-                0x1001879e                I2S_IRQHandler
-                0x100187a0                CNN_FIFO_IRQHandler
-                0x100187a2                CNN_IRQHandler
-                0x100187a4                RSV102_IRQHandler
-                0x100187a6                LPCMP_IRQHandler
- .text._sbrk    0x100187d0       0x3c /decoder/build/heap.o
-                0x100187d0                _sbrk
- .text._getpid  0x1001880c        0x8 /decoder/build/system_max78000.o
-                0x1001880c                _getpid
- .text._kill    0x10018814        0x8 /decoder/build/system_max78000.o
-                0x10018814                _kill
+                0x10018500       0x40 /decoder/build/led.o
+                0x10018500                LED_Init
+ .text.PB_Init  0x10018540       0x38 /decoder/build/pb.o
+                0x10018540                PB_Init
+ .text          0x10018578      0x148 /decoder/build/startup_firmware.o
+                0x10018578                Reset_Handler
+                0x100185b6                HardFault_Handler
+                0x100185b8                MemManage_Handler
+                0x100185ba                BusFault_Handler
+                0x100185bc                UsageFault_Handler
+                0x100185be                SVC_Handler
+                0x100185c0                DebugMon_Handler
+                0x100185c2                PendSV_Handler
+                0x100185c4                SysTick_Handler
+                0x100185c6                Default_Handler
+                0x100185c8                PF_IRQHandler
+                0x100185ca                WDT0_IRQHandler
+                0x100185cc                RSV02_IRQHandler
+                0x100185ce                RTC_IRQHandler
+                0x100185d0                TRNG_IRQHandler
+                0x100185d2                TMR0_IRQHandler
+                0x100185d4                TMR1_IRQHandler
+                0x100185d6                TMR2_IRQHandler
+                0x100185d8                TMR3_IRQHandler
+                0x100185da                TMR4_IRQHandler
+                0x100185dc                TMR5_IRQHandler
+                0x100185de                RSV11_IRQHandler
+                0x100185e0                RSV12_IRQHandler
+                0x100185e2                I2C0_IRQHandler
+                0x100185e4                UART0_IRQHandler
+                0x100185e6                UART1_IRQHandler
+                0x100185e8                SPI1_IRQHandler
+                0x100185ea                RSV17_IRQHandler
+                0x100185ec                RSV18_IRQHandler
+                0x100185ee                RSV19_IRQHandler
+                0x100185f0                ADC_IRQHandler
+                0x100185f2                RSV21_IRQHandler
+                0x100185f4                RSV22_IRQHandler
+                0x100185f6                FLC0_IRQHandler
+                0x100185fc                GPIO2_IRQHandler
+                0x100185fe                RSV27_IRQHandler
+                0x10018600                DMA0_IRQHandler
+                0x10018602                DMA1_IRQHandler
+                0x10018604                DMA2_IRQHandler
+                0x10018606                DMA3_IRQHandler
+                0x10018608                RSV32_IRQHandler
+                0x1001860a                RSV33_IRQHandler
+                0x1001860c                UART2_IRQHandler
+                0x1001860e                RSV35_IRQHandler
+                0x10018610                I2C1_IRQHandler
+                0x10018612                RSV37_IRQHandler
+                0x10018614                RSV38_IRQHandler
+                0x10018616                RSV39_IRQHandler
+                0x10018618                RSV40_IRQHandler
+                0x1001861a                RSV41_IRQHandler
+                0x1001861c                RSV42_IRQHandler
+                0x1001861e                RSV43_IRQHandler
+                0x10018620                RSV44_IRQHandler
+                0x10018622                RSV45_IRQHandler
+                0x10018624                RSV46_IRQHandler
+                0x10018626                RSV47_IRQHandler
+                0x10018628                RSV48_IRQHandler
+                0x1001862a                RSV49_IRQHandler
+                0x1001862c                RSV50_IRQHandler
+                0x1001862e                RSV51_IRQHandler
+                0x10018630                RSV52_IRQHandler
+                0x10018632                WUT_IRQHandler
+                0x10018634                GPIOWAKE_IRQHandler
+                0x10018636                RSV55_IRQHandler
+                0x10018638                SPI0_IRQHandler
+                0x1001863a                WDT1_IRQHandler
+                0x1001863c                RSV58_IRQHandler
+                0x1001863e                PT_IRQHandler
+                0x10018640                RSV60_IRQHandler
+                0x10018642                RSV61_IRQHandler
+                0x10018644                I2C2_IRQHandler
+                0x10018646                RISCV_IRQHandler
+                0x10018648                RSV64_IRQHandler
+                0x1001864a                RSV65_IRQHandler
+                0x1001864c                RSV66_IRQHandler
+                0x1001864e                OWM_IRQHandler
+                0x10018650                RSV68_IRQHandler
+                0x10018652                RSV69_IRQHandler
+                0x10018654                RSV70_IRQHandler
+                0x10018656                RSV71_IRQHandler
+                0x10018658                RSV72_IRQHandler
+                0x1001865a                RSV73_IRQHandler
+                0x1001865c                RSV74_IRQHandler
+                0x1001865e                RSV75_IRQHandler
+                0x10018660                RSV76_IRQHandler
+                0x10018662                RSV77_IRQHandler
+                0x10018664                RSV78_IRQHandler
+                0x10018666                RSV79_IRQHandler
+                0x10018668                RSV80_IRQHandler
+                0x1001866a                RSV81_IRQHandler
+                0x1001866c                ECC_IRQHandler
+                0x1001866e                DVS_IRQHandler
+                0x10018670                SIMO_IRQHandler
+                0x10018672                RSV85_IRQHandler
+                0x10018674                RSV86_IRQHandler
+                0x10018676                RSV87_IRQHandler
+                0x10018678                UART3_IRQHandler
+                0x1001867a                RSV89_IRQHandler
+                0x1001867c                RSV90_IRQHandler
+                0x1001867e                PCIF_IRQHandler
+                0x10018680                RSV92_IRQHandler
+                0x10018682                RSV93_IRQHandler
+                0x10018684                RSV94_IRQHandler
+                0x10018686                RSV95_IRQHandler
+                0x10018688                RSV96_IRQHandler
+                0x1001868a                AES_IRQHandler
+                0x1001868c                RSV98_IRQHandler
+                0x1001868e                I2S_IRQHandler
+                0x10018690                CNN_FIFO_IRQHandler
+                0x10018692                CNN_IRQHandler
+                0x10018694                RSV102_IRQHandler
+                0x10018696                LPCMP_IRQHandler
+ .text._sbrk    0x100186c0       0x3c /decoder/build/heap.o
+                0x100186c0                _sbrk
+ .text._getpid  0x100186fc        0x8 /decoder/build/system_max78000.o
+                0x100186fc                _getpid
+ .text._kill    0x10018704        0x8 /decoder/build/system_max78000.o
+                0x10018704                _kill
  .text.SystemCoreClockUpdate
-                0x1001881c       0x6c /decoder/build/system_max78000.o
-                0x1001881c                SystemCoreClockUpdate
- .text.PreInit  0x10018888        0x4 /decoder/build/system_max78000.o
-                0x10018888                PreInit
+                0x1001870c       0x6c /decoder/build/system_max78000.o
+                0x1001870c                SystemCoreClockUpdate
+ .text.PreInit  0x10018778        0x4 /decoder/build/system_max78000.o
+                0x10018778                PreInit
  .text.SystemInit
-                0x1001888c       0x38 /decoder/build/system_max78000.o
-                0x1001888c                SystemInit
+                0x1001877c       0x38 /decoder/build/system_max78000.o
+                0x1001877c                SystemInit
  .text.MXC_DelayInit
-                0x100188c4       0x7c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+                0x100187b4       0x7c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
  .text.MXC_DelayAsync
-                0x10018940       0x3c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
-                0x10018940                MXC_DelayAsync
+                0x10018830       0x3c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+                0x10018830                MXC_DelayAsync
  .text.MXC_DelayCheck
-                0x1001897c       0x70 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
-                0x1001897c                MXC_DelayCheck
+                0x1001886c       0x70 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+                0x1001886c                MXC_DelayCheck
  .text.MXC_DelayAbort
-                0x100189ec       0x34 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
-                0x100189ec                MXC_DelayAbort
+                0x100188dc       0x34 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+                0x100188dc                MXC_DelayAbort
  .text.MXC_Delay
-                0x10018a20       0x74 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
-                0x10018a20                MXC_Delay
+                0x10018910       0x74 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+                0x10018910                MXC_Delay
  .text.MXC_NVIC_SetVector
-                0x10018a94       0x50 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
-                0x10018a94                MXC_NVIC_SetVector
+                0x10018984       0x50 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
+                0x10018984                MXC_NVIC_SetVector
  .text.MXC_SYS_ClockDisable
-                0x10018ae4       0x40 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
-                0x10018ae4                MXC_SYS_ClockDisable
+                0x100189d4       0x40 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+                0x100189d4                MXC_SYS_ClockDisable
  .text.MXC_SYS_ClockEnable
-                0x10018b24       0x44 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
-                0x10018b24                MXC_SYS_ClockEnable
+                0x10018a14       0x44 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+                0x10018a14                MXC_SYS_ClockEnable
  .text.MXC_SYS_ClockSourceEnable
-                0x10018b68       0xf4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
-                0x10018b68                MXC_SYS_ClockSourceEnable
+                0x10018a58       0xf4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+                0x10018a58                MXC_SYS_ClockSourceEnable
  .text.MXC_SYS_Reset_Periph
-                0x10018c5c       0x48 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
-                0x10018c5c                MXC_SYS_Reset_Periph
+                0x10018b4c       0x48 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+                0x10018b4c                MXC_SYS_Reset_Periph
  .text.MXC_FLC_Write32
-                0x10018ca4       0x70 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
-                0x10018ca4                MXC_FLC_Write32
+                0x10018b94       0x70 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
+                0x10018b94                MXC_FLC_Write32
  .text.MXC_FLC_Write
-                0x10018d14        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
-                0x10018d14                MXC_FLC_Write
+                0x10018c04        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
+                0x10018c04                MXC_FLC_Write
  .text.MXC_FLC_Read
-                0x10018d18        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
-                0x10018d18                MXC_FLC_Read
+                0x10018c08        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
+                0x10018c08                MXC_FLC_Read
  .text.MXC_FLC_EnableInt
-                0x10018d1c        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
-                0x10018d1c                MXC_FLC_EnableInt
+                0x10018c0c        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
+                0x10018c0c                MXC_FLC_EnableInt
  .text.MXC_FLC_RevA_EnableInt
-                0x10018d20       0x20 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_reva.o)
-                0x10018d20                MXC_FLC_RevA_EnableInt
+                0x10018c10       0x20 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_reva.o)
+                0x10018c10                MXC_FLC_RevA_EnableInt
  .text.MXC_GPIO_Init
-                0x10018d40       0x40 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
-                0x10018d40                MXC_GPIO_Init
+                0x10018c30       0x40 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+                0x10018c30                MXC_GPIO_Init
  .text.MXC_GPIO_Config
-                0x10018d80      0x244 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
-                0x10018d80                MXC_GPIO_Config
+                0x10018c70      0x244 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+                0x10018c70                MXC_GPIO_Config
  .text.MXC_GPIO_OutSet
-                0x10018fc4       0x2c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
-                0x10018fc4                MXC_GPIO_OutSet
- .text.MXC_GPIO_OutClr
-                0x10018ff0       0x30 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
-                0x10018ff0                MXC_GPIO_OutClr
+                0x10018eb4       0x2c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+                0x10018eb4                MXC_GPIO_OutSet
  .text.MXC_GPIO_Handler
-                0x10019020        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
-                0x10019020                MXC_GPIO_Handler
+                0x10018ee0        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+                0x10018ee0                MXC_GPIO_Handler
  .text.MXC_GPIO_ClearFlags
-                0x10019024       0x18 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
-                0x10019024                MXC_GPIO_ClearFlags
+                0x10018ee4       0x18 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+                0x10018ee4                MXC_GPIO_ClearFlags
  .text.MXC_GPIO_GetFlags
-                0x1001903c       0x18 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
-                0x1001903c                MXC_GPIO_GetFlags
+                0x10018efc       0x18 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+                0x10018efc                MXC_GPIO_GetFlags
  .text.MXC_GPIO_RevA_OutSet
-                0x10019054        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
-                0x10019054                MXC_GPIO_RevA_OutSet
- .text.MXC_GPIO_RevA_OutClr
-                0x10019058        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
-                0x10019058                MXC_GPIO_RevA_OutClr
+                0x10018f14        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+                0x10018f14                MXC_GPIO_RevA_OutSet
  .text.MXC_GPIO_RevA_ClearFlags
-                0x1001905c        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
-                0x1001905c                MXC_GPIO_RevA_ClearFlags
+                0x10018f18        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+                0x10018f18                MXC_GPIO_RevA_ClearFlags
  .text.MXC_GPIO_RevA_GetFlags
-                0x10019060        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
-                0x10019060                MXC_GPIO_RevA_GetFlags
+                0x10018f1c        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+                0x10018f1c                MXC_GPIO_RevA_GetFlags
  .text.MXC_GPIO_RevA_SetVSSEL
-                0x10019064       0x2c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
-                0x10019064                MXC_GPIO_RevA_SetVSSEL
+                0x10018f20       0x2c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+                0x10018f20                MXC_GPIO_RevA_SetVSSEL
  .text.MXC_GPIO_RevA_SetAF
-                0x10019090       0x6c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
-                0x10019090                MXC_GPIO_RevA_SetAF
+                0x10018f4c       0x6c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+                0x10018f4c                MXC_GPIO_RevA_SetAF
  .text.MXC_GPIO_RevA_SetDriveStrength
-                0x100190fc       0x74 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
-                0x100190fc                MXC_GPIO_RevA_SetDriveStrength
+                0x10018fb8       0x74 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+                0x10018fb8                MXC_GPIO_RevA_SetDriveStrength
  .text.MXC_ICC_Enable
-                0x10019170        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
-                0x10019170                MXC_ICC_Enable
+                0x1001902c        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
+                0x1001902c                MXC_ICC_Enable
  .text.MXC_ICC_Disable
-                0x10019174        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
-                0x10019174                MXC_ICC_Disable
+                0x10019030        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
+                0x10019030                MXC_ICC_Disable
  .text.MXC_ICC_RevA_Enable
-                0x10019178       0x30 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
-                0x10019178                MXC_ICC_RevA_Enable
+                0x10019034       0x30 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
+                0x10019034                MXC_ICC_RevA_Enable
  .text.MXC_ICC_RevA_Disable
-                0x100191a8       0x10 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
-                0x100191a8                MXC_ICC_RevA_Disable
+                0x10019064       0x10 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
+                0x10019064                MXC_ICC_RevA_Disable
  .text.MXC_UART_Shutdown
-                0x100191b8       0x6c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x100191b8                MXC_UART_Shutdown
+                0x10019074       0x6c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x10019074                MXC_UART_Shutdown
  .text.MXC_UART_Init
-                0x10019224       0xb8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019224                MXC_UART_Init
+                0x100190e0       0xb8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100190e0                MXC_UART_Init
  .text.MXC_UART_SetFrequency
-                0x100192dc       0xd0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x100192dc                MXC_UART_SetFrequency
+                0x10019198       0xd0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x10019198                MXC_UART_SetFrequency
  .text.MXC_UART_GetFrequency
-                0x100193ac       0x54 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x100193ac                MXC_UART_GetFrequency
+                0x10019268       0x54 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x10019268                MXC_UART_GetFrequency
  .text.MXC_UART_SetDataSize
-                0x10019400        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019400                MXC_UART_SetDataSize
+                0x100192bc        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192bc                MXC_UART_SetDataSize
  .text.MXC_UART_SetStopBits
-                0x10019404        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019404                MXC_UART_SetStopBits
+                0x100192c0        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192c0                MXC_UART_SetStopBits
  .text.MXC_UART_SetParity
-                0x10019408        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019408                MXC_UART_SetParity
+                0x100192c4        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192c4                MXC_UART_SetParity
  .text.MXC_UART_ReadCharacterRaw
-                0x1001940c        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x1001940c                MXC_UART_ReadCharacterRaw
+                0x100192c8        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192c8                MXC_UART_ReadCharacterRaw
  .text.MXC_UART_WriteCharacterRaw
-                0x10019410        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019410                MXC_UART_WriteCharacterRaw
+                0x100192cc        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192cc                MXC_UART_WriteCharacterRaw
  .text.MXC_UART_ReadCharacter
-                0x10019414        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019414                MXC_UART_ReadCharacter
+                0x100192d0        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192d0                MXC_UART_ReadCharacter
  .text.MXC_UART_WriteCharacter
-                0x10019418        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019418                MXC_UART_WriteCharacter
+                0x100192d4        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192d4                MXC_UART_WriteCharacter
  .text.MXC_UART_GetRXFIFOAvailable
-                0x1001941c        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x1001941c                MXC_UART_GetRXFIFOAvailable
+                0x100192d8        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192d8                MXC_UART_GetRXFIFOAvailable
  .text.MXC_UART_GetTXFIFOAvailable
-                0x10019420        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019420                MXC_UART_GetTXFIFOAvailable
+                0x100192dc        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192dc                MXC_UART_GetTXFIFOAvailable
  .text.MXC_UART_SetRXThreshold
-                0x10019424        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
-                0x10019424                MXC_UART_SetRXThreshold
+                0x100192e0        0x4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+                0x100192e0                MXC_UART_SetRXThreshold
  .text.MXC_UART_Common_ReadCharacter
-                0x10019428       0x18 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
-                0x10019428                MXC_UART_Common_ReadCharacter
+                0x100192e4       0x18 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
+                0x100192e4                MXC_UART_Common_ReadCharacter
  .text.MXC_UART_Common_WriteCharacter
-                0x10019440       0x1c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
-                0x10019440                MXC_UART_Common_WriteCharacter
+                0x100192fc       0x1c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
+                0x100192fc                MXC_UART_Common_WriteCharacter
  .text.MXC_UART_RevB_Init
-                0x1001945c       0xe0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x1001945c                MXC_UART_RevB_Init
+                0x10019318       0xe0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x10019318                MXC_UART_RevB_Init
  .text.MXC_UART_RevB_SetFrequency
-                0x1001953c       0x70 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x1001953c                MXC_UART_RevB_SetFrequency
+                0x100193f8       0x70 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x100193f8                MXC_UART_RevB_SetFrequency
  .text.MXC_UART_RevB_GetFrequency
-                0x100195ac       0x58 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x100195ac                MXC_UART_RevB_GetFrequency
+                0x10019468       0x58 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x10019468                MXC_UART_RevB_GetFrequency
  .text.MXC_UART_RevB_SetDataSize
-                0x10019604       0x20 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x10019604                MXC_UART_RevB_SetDataSize
+                0x100194c0       0x20 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x100194c0                MXC_UART_RevB_SetDataSize
  .text.MXC_UART_RevB_SetStopBits
-                0x10019624       0x24 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x10019624                MXC_UART_RevB_SetStopBits
+                0x100194e0       0x24 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x100194e0                MXC_UART_RevB_SetStopBits
  .text.MXC_UART_RevB_SetParity
-                0x10019648       0x8c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x10019648                MXC_UART_RevB_SetParity
+                0x10019504       0x8c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x10019504                MXC_UART_RevB_SetParity
  .text.MXC_UART_RevB_ReadCharacterRaw
-                0x100196d4       0x10 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x100196d4                MXC_UART_RevB_ReadCharacterRaw
+                0x10019590       0x10 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x10019590                MXC_UART_RevB_ReadCharacterRaw
  .text.MXC_UART_RevB_WriteCharacterRaw
-                0x100196e4       0x14 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x100196e4                MXC_UART_RevB_WriteCharacterRaw
+                0x100195a0       0x14 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x100195a0                MXC_UART_RevB_WriteCharacterRaw
  .text.MXC_UART_RevB_GetRXFIFOAvailable
-                0x100196f8        0x8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x100196f8                MXC_UART_RevB_GetRXFIFOAvailable
+                0x100195b4        0x8 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x100195b4                MXC_UART_RevB_GetRXFIFOAvailable
  .text.MXC_UART_RevB_GetTXFIFOAvailable
-                0x10019700        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x10019700                MXC_UART_RevB_GetTXFIFOAvailable
+                0x100195bc        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x100195bc                MXC_UART_RevB_GetTXFIFOAvailable
  .text.MXC_UART_RevB_SetRXThreshold
-                0x1001970c       0x1c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
-                0x1001970c                MXC_UART_RevB_SetRXThreshold
+                0x100195c8       0x1c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x100195c8                MXC_UART_RevB_SetRXThreshold
  .text.MXC_GPIO_Common_Init
-                0x10019728       0x24 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
-                0x10019728                MXC_GPIO_Common_Init
+                0x100195e4       0x24 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
+                0x100195e4                MXC_GPIO_Common_Init
  .text.MXC_GPIO_Common_Handler
-                0x1001974c       0x68 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
-                0x1001974c                MXC_GPIO_Common_Handler
- *fill*         0x100197b4        0xc 
- .text          0x100197c0       0xd8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
-                0x100197c0                strlen
- .text          0x10019898       0xa4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
-                0x10019898                memset
- .text          0x1001993c      0x19c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fflush.o)
-                0x1001993c                __sflush_r
-                0x10019a64                _fflush_r
-                0x10019a90                fflush
- .text          0x10019ad8      0x100 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memmove.o)
-                0x10019ad8                memmove
- .text          0x10019bd8        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
-                0x10019bd8                __errno
- .text          0x10019be4      0x2b0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-freer.o)
-                0x10019be4                _malloc_trim_r
-                0x10019c9c                _free_r
- .text          0x10019e94       0x5c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcmp.o)
-                0x10019e94                memcmp
- .text          0x10019ef0       0x90 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fclose.o)
-                0x10019ef0                _fclose_r
-                0x10019f70                fclose
- .text          0x10019f80      0x114 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-snprintf.o)
-                0x10019f80                _snprintf_r
-                0x1001a004                snprintf
- .text          0x1001a094      0x134 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
-                0x1001a094                memcpy
- .text          0x1001a1c8       0x1c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sysconf.o)
-                0x1001a1c8                sysconf
- .text          0x1001a1e4       0x94 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-stdio.o)
-                0x1001a1e4                __sread
-                0x1001a208                __seofread
-                0x1001a20c                __swrite
-                0x1001a24c                __sseek
-                0x1001a270                __sclose
- .text          0x1001a278       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
-                0x1001a278                __libc_init_array
- .text          0x1001a2c8      0x344 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reallocr.o)
-                0x1001a2c8                _realloc_r
- .text          0x1001a60c       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-writer.o)
-                0x1001a60c                _write_r
- .text          0x1001a638       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fstatr.o)
-                0x1001a638                _fstat_r
- .text          0x1001a664        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mlock.o)
-                0x1001a664                __malloc_lock
-                0x1001a668                __malloc_unlock
- .text          0x1001a66c      0x224 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
-                0x1001a79c                __sfp
-                0x1001a840                __sinit
-                0x1001a860                __sfp_lock_acquire
-                0x1001a864                __sfp_lock_release
-                0x1001a868                __fp_lock_all
-                0x1001a87c                __fp_unlock_all
- .text          0x1001a890       0x7c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o)
-                0x1001a890                _puts_r
-                0x1001a8fc                puts
- .text          0x1001a90c      0x2f8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fvwrite.o)
-                0x1001a90c                __sfvwrite_r
- .text          0x1001ac04        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
-                0x1001ac04                atexit
- .text          0x1001ac10       0x48 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-printf.o)
-                0x1001ac10                _printf_r
-                0x1001ac30                printf
- .text          0x1001ac58       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sbrkr.o)
-                0x1001ac58                _sbrk_r
- .text          0x1001ac7c       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-closer.o)
-                0x1001ac7c                _close_r
- .text          0x1001aca0       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
-                0x1001aca0                __libc_fini_array
- .text          0x1001acc8       0x44 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fwalk.o)
-                0x1001acc8                _fwalk_sglue
- .text          0x1001ad0c     0x14b4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
-                0x1001ad0c                _vfprintf_r
-                0x1001c13c                vfprintf
- .text          0x1001c1c0      0x13c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-makebuf.o)
-                0x1001c1c0                __smakebuf_r
-                0x1001c29c                __swhatbuf_r
- *fill*         0x1001c2fc        0x4 
- .text          0x1001c300       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
-                0x1001c300                memchr
- .text          0x1001c3a0     0x13c8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
-                0x1001c3a0                _svfprintf_r
- .text          0x1001d768       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-readr.o)
-                0x1001d768                _read_r
- .text          0x1001d794      0x55c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mallocr.o)
-                0x1001d794                _malloc_r
- .text          0x1001dcf0      0xfb0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-dtoa.o)
-                0x1001de1c                _dtoa_r
- .text          0x1001eca0       0xc4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wsetup.o)
-                0x1001eca0                __swsetup_r
- .text          0x1001ed64       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-lseekr.o)
-                0x1001ed64                _lseek_r
- .text.startup  0x1001ed90       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
- .text          0x1001eda4       0x64 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
-                0x1001eda4                __register_exitproc
- .text          0x1001ee08       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-isattyr.o)
-                0x1001ee08                _isatty_r
- .text          0x1001ee2c       0x58 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssprint_r.o)
-                0x1001ee2c                __ssprint_r
- .text          0x1001ee84       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sprint_r.o)
-                0x1001ee84                __sprint_r
- .text          0x1001eea4       0x4c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-assert.o)
-                0x1001eea4                __assert_func
-                0x1001eee4                __assert
- .text          0x1001eef0      0xa8c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
-                0x1001eef0                _Balloc
-                0x1001ef3c                _Bfree
-                0x1001ef50                __multadd
-                0x1001eff0                __s2b
-                0x1001f0a4                __hi0bits
-                0x1001f0e8                __lo0bits
-                0x1001f148                __i2b
-                0x1001f1a4                __multiply
-                0x1001f310                __pow5mult
-                0x1001f3c4                __lshift
-                0x1001f4b4                __mcmp
-                0x1001f4f4                __mdiff
-                0x1001f66c                __ulp
-                0x1001f6b8                __b2d
-                0x1001f778                __d2b
-                0x1001f834                __ratio
-                0x1001f890                _mprec_log10
-                0x1001f8c8                __copybits
-                0x1001f924                __any_on
- .text          0x1001f97c       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-localeconv.o)
-                0x1001f97c                __localeconv_l
-                0x1001f980                _localeconv_r
-                0x1001f988                localeconv
- .text          0x1001f990       0x40 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mbtowc_r.o)
-                0x1001f990                _mbtowc_r
-                0x1001f9a4                __ascii_mbtowc
- .text          0x1001f9d0       0x10 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-abort.o)
-                0x1001f9d0                abort
- .text          0x1001f9e0       0x6c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-callocr.o)
-                0x1001f9e0                _calloc_r
- .text          0x1001fa4c       0xc0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssputs_r.o)
-                0x1001fa4c                __ssputs_r
- .text          0x1001fb0c       0x44 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fiprintf.o)
-                0x1001fb0c                _fiprintf_r
-                0x1001fb28                fiprintf
- .text          0x1001fb50       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wctomb_r.o)
-                0x1001fb50                _wctomb_r
-                0x1001fb64                __ascii_wctomb
- .text          0x1001fb80      0x280 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signal.o)
-                0x1001fb80                _init_signal_r
-                0x1001fbb0                _signal_r
-                0x1001fc00                _raise_r
-                0x1001fc54                __sigtramp_r
-                0x1001fcb8                raise
-                0x1001fd10                signal
-                0x1001fd60                _init_signal
-                0x1001fd98                __sigtramp
- .text          0x1001fe00       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signalr.o)
-                0x1001fe00                _kill_r
-                0x1001fe2c                _getpid_r
- .text          0x1001fe30      0xb40 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
-                0x1001fe30                _vfiprintf_r
-                0x100208ec                vfiprintf
- .text          0x10020970        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libnosys.a(_exit.o)
-                0x10020970                _exit
- .text          0x10020974      0x378 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
-                0x10020974                __aeabi_drsub
-                0x1002097c                __aeabi_dsub
-                0x1002097c                __subdf3
-                0x10020980                __adddf3
-                0x10020980                __aeabi_dadd
-                0x10020bf8                __aeabi_ui2d
-                0x10020bf8                __floatunsidf
-                0x10020c18                __floatsidf
-                0x10020c18                __aeabi_i2d
-                0x10020c3c                __extendsfdf2
-                0x10020c3c                __aeabi_f2d
-                0x10020c80                __aeabi_ul2d
-                0x10020c80                __floatundidf
-                0x10020c90                __floatdidf
-                0x10020c90                __aeabi_l2d
- .text          0x10020cec      0x424 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
-                0x10020cec                __aeabi_dmul
-                0x10020cec                __muldf3
-                0x10020f40                __aeabi_ddiv
-                0x10020f40                __divdf3
- .text          0x10021110      0x110 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
-                0x10021110                __gtdf2
-                0x10021110                __gedf2
-                0x10021118                __ltdf2
-                0x10021118                __ledf2
-                0x10021120                __cmpdf2
-                0x10021120                __eqdf2
-                0x10021120                __nedf2
-                0x1002119c                __aeabi_cdrcmple
-                0x100211ac                __aeabi_cdcmple
-                0x100211ac                __aeabi_cdcmpeq
-                0x100211bc                __aeabi_dcmpeq
-                0x100211d0                __aeabi_dcmplt
-                0x100211e4                __aeabi_dcmple
-                0x100211f8                __aeabi_dcmpge
-                0x1002120c                __aeabi_dcmpgt
- .text          0x10021220       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
-                0x10021220                __aeabi_dcmpun
-                0x10021220                __unorddf2
- .text          0x1002124c       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixdfsi.o)
-                0x1002124c                __fixdfsi
-                0x1002124c                __aeabi_d2iz
- .text          0x1002129c       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
-                0x1002129c                __aeabi_uldivmod
- .text          0x100212cc      0x2bc /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
-                0x100212cc                __udivmoddi4
- .text          0x10021588        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
-                0x10021588                __aeabi_ldiv0
-                0x10021588                __aeabi_idiv0
+                0x10019608       0x68 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
+                0x10019608                MXC_GPIO_Common_Handler
+ *fill*         0x10019670       0x10 
+ .text          0x10019680       0xd8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
+                0x10019680                strlen
+ .text          0x10019758       0xa4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+                0x10019758                memset
+ .text          0x100197fc      0x19c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fflush.o)
+                0x100197fc                __sflush_r
+                0x10019924                _fflush_r
+                0x10019950                fflush
+ .text          0x10019998      0x100 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memmove.o)
+                0x10019998                memmove
+ .text          0x10019a98        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+                0x10019a98                __errno
+ .text          0x10019aa4      0x2b0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-freer.o)
+                0x10019aa4                _malloc_trim_r
+                0x10019b5c                _free_r
+ .text          0x10019d54       0x5c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcmp.o)
+                0x10019d54                memcmp
+ .text          0x10019db0       0x90 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fclose.o)
+                0x10019db0                _fclose_r
+                0x10019e30                fclose
+ .text          0x10019e40      0x114 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-snprintf.o)
+                0x10019e40                _snprintf_r
+                0x10019ec4                snprintf
+ .text          0x10019f54      0x134 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
+                0x10019f54                memcpy
+ .text          0x1001a088       0x1c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sysconf.o)
+                0x1001a088                sysconf
+ .text          0x1001a0a4       0x94 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-stdio.o)
+                0x1001a0a4                __sread
+                0x1001a0c8                __seofread
+                0x1001a0cc                __swrite
+                0x1001a10c                __sseek
+                0x1001a130                __sclose
+ .text          0x1001a138       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+                0x1001a138                __libc_init_array
+ .text          0x1001a188      0x344 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reallocr.o)
+                0x1001a188                _realloc_r
+ .text          0x1001a4cc       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-writer.o)
+                0x1001a4cc                _write_r
+ .text          0x1001a4f8       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fstatr.o)
+                0x1001a4f8                _fstat_r
+ .text          0x1001a524        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mlock.o)
+                0x1001a524                __malloc_lock
+                0x1001a528                __malloc_unlock
+ .text          0x1001a52c      0x224 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+                0x1001a65c                __sfp
+                0x1001a700                __sinit
+                0x1001a720                __sfp_lock_acquire
+                0x1001a724                __sfp_lock_release
+                0x1001a728                __fp_lock_all
+                0x1001a73c                __fp_unlock_all
+ .text          0x1001a750       0x7c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o)
+                0x1001a750                _puts_r
+                0x1001a7bc                puts
+ .text          0x1001a7cc      0x2f8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fvwrite.o)
+                0x1001a7cc                __sfvwrite_r
+ .text          0x1001aac4        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+                0x1001aac4                atexit
+ .text          0x1001aad0       0x48 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-printf.o)
+                0x1001aad0                _printf_r
+                0x1001aaf0                printf
+ .text          0x1001ab18       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sbrkr.o)
+                0x1001ab18                _sbrk_r
+ .text          0x1001ab3c       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-closer.o)
+                0x1001ab3c                _close_r
+ .text          0x1001ab60       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+                0x1001ab60                __libc_fini_array
+ .text          0x1001ab88       0x44 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fwalk.o)
+                0x1001ab88                _fwalk_sglue
+ .text          0x1001abcc     0x14b4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
+                0x1001abcc                _vfprintf_r
+                0x1001bffc                vfprintf
+ .text          0x1001c080      0x13c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-makebuf.o)
+                0x1001c080                __smakebuf_r
+                0x1001c15c                __swhatbuf_r
+ *fill*         0x1001c1bc        0x4 
+ .text          0x1001c1c0       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
+                0x1001c1c0                memchr
+ .text          0x1001c260     0x13c8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
+                0x1001c260                _svfprintf_r
+ .text          0x1001d628       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-readr.o)
+                0x1001d628                _read_r
+ .text          0x1001d654      0x55c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mallocr.o)
+                0x1001d654                _malloc_r
+ .text          0x1001dbb0      0xfb0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-dtoa.o)
+                0x1001dcdc                _dtoa_r
+ .text          0x1001eb60       0xc4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wsetup.o)
+                0x1001eb60                __swsetup_r
+ .text          0x1001ec24       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-lseekr.o)
+                0x1001ec24                _lseek_r
+ .text.startup  0x1001ec50       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .text          0x1001ec64       0x64 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+                0x1001ec64                __register_exitproc
+ .text          0x1001ecc8       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-isattyr.o)
+                0x1001ecc8                _isatty_r
+ .text          0x1001ecec       0x58 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssprint_r.o)
+                0x1001ecec                __ssprint_r
+ .text          0x1001ed44       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sprint_r.o)
+                0x1001ed44                __sprint_r
+ .text          0x1001ed64       0x4c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-assert.o)
+                0x1001ed64                __assert_func
+                0x1001eda4                __assert
+ .text          0x1001edb0      0xa8c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
+                0x1001edb0                _Balloc
+                0x1001edfc                _Bfree
+                0x1001ee10                __multadd
+                0x1001eeb0                __s2b
+                0x1001ef64                __hi0bits
+                0x1001efa8                __lo0bits
+                0x1001f008                __i2b
+                0x1001f064                __multiply
+                0x1001f1d0                __pow5mult
+                0x1001f284                __lshift
+                0x1001f374                __mcmp
+                0x1001f3b4                __mdiff
+                0x1001f52c                __ulp
+                0x1001f578                __b2d
+                0x1001f638                __d2b
+                0x1001f6f4                __ratio
+                0x1001f750                _mprec_log10
+                0x1001f788                __copybits
+                0x1001f7e4                __any_on
+ .text          0x1001f83c       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-localeconv.o)
+                0x1001f83c                __localeconv_l
+                0x1001f840                _localeconv_r
+                0x1001f848                localeconv
+ .text          0x1001f850       0x40 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mbtowc_r.o)
+                0x1001f850                _mbtowc_r
+                0x1001f864                __ascii_mbtowc
+ .text          0x1001f890       0x10 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-abort.o)
+                0x1001f890                abort
+ .text          0x1001f8a0       0x6c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-callocr.o)
+                0x1001f8a0                _calloc_r
+ .text          0x1001f90c       0xc0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssputs_r.o)
+                0x1001f90c                __ssputs_r
+ .text          0x1001f9cc       0x44 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fiprintf.o)
+                0x1001f9cc                _fiprintf_r
+                0x1001f9e8                fiprintf
+ .text          0x1001fa10       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wctomb_r.o)
+                0x1001fa10                _wctomb_r
+                0x1001fa24                __ascii_wctomb
+ .text          0x1001fa40      0x280 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signal.o)
+                0x1001fa40                _init_signal_r
+                0x1001fa70                _signal_r
+                0x1001fac0                _raise_r
+                0x1001fb14                __sigtramp_r
+                0x1001fb78                raise
+                0x1001fbd0                signal
+                0x1001fc20                _init_signal
+                0x1001fc58                __sigtramp
+ .text          0x1001fcc0       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signalr.o)
+                0x1001fcc0                _kill_r
+                0x1001fcec                _getpid_r
+ .text          0x1001fcf0      0xb40 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
+                0x1001fcf0                _vfiprintf_r
+                0x100207ac                vfiprintf
+ .text          0x10020830        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libnosys.a(_exit.o)
+                0x10020830                _exit
+ .text          0x10020834      0x378 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+                0x10020834                __aeabi_drsub
+                0x1002083c                __aeabi_dsub
+                0x1002083c                __subdf3
+                0x10020840                __adddf3
+                0x10020840                __aeabi_dadd
+                0x10020ab8                __aeabi_ui2d
+                0x10020ab8                __floatunsidf
+                0x10020ad8                __floatsidf
+                0x10020ad8                __aeabi_i2d
+                0x10020afc                __extendsfdf2
+                0x10020afc                __aeabi_f2d
+                0x10020b40                __aeabi_ul2d
+                0x10020b40                __floatundidf
+                0x10020b50                __floatdidf
+                0x10020b50                __aeabi_l2d
+ .text          0x10020bac      0x424 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+                0x10020bac                __aeabi_dmul
+                0x10020bac                __muldf3
+                0x10020e00                __aeabi_ddiv
+                0x10020e00                __divdf3
+ .text          0x10020fd0      0x110 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
+                0x10020fd0                __gtdf2
+                0x10020fd0                __gedf2
+                0x10020fd8                __ltdf2
+                0x10020fd8                __ledf2
+                0x10020fe0                __cmpdf2
+                0x10020fe0                __eqdf2
+                0x10020fe0                __nedf2
+                0x1002105c                __aeabi_cdrcmple
+                0x1002106c                __aeabi_cdcmple
+                0x1002106c                __aeabi_cdcmpeq
+                0x1002107c                __aeabi_dcmpeq
+                0x10021090                __aeabi_dcmplt
+                0x100210a4                __aeabi_dcmple
+                0x100210b8                __aeabi_dcmpge
+                0x100210cc                __aeabi_dcmpgt
+ .text          0x100210e0       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
+                0x100210e0                __aeabi_dcmpun
+                0x100210e0                __unorddf2
+ .text          0x1002110c       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixdfsi.o)
+                0x1002110c                __fixdfsi
+                0x1002110c                __aeabi_d2iz
+ .text          0x1002115c       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                0x1002115c                __aeabi_uldivmod
+ .text          0x1002118c      0x2bc /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x1002118c                __udivmoddi4
+ .text          0x10021448        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x10021448                __aeabi_ldiv0
+                0x10021448                __aeabi_idiv0
  *(.rodata*)
  .rodata.init.part.0.str1.4
-                0x1002158c      0x5de /decoder/build/decoder.o
+                0x1002144c      0x5fa /decoder/build/decoder.o
                                  0x43 (size before relaxing)
  .rodata.update_subscription.str1.4
-                0x10021b6a      0x152 /decoder/build/decoder.o
+                0x10021a46      0x162 /decoder/build/decoder.o
  .rodata.decode.str1.4
-                0x10021b6a       0xf5 /decoder/build/decoder.o
+                0x10021a46       0xf5 /decoder/build/decoder.o
  .rodata.main.str1.4
-                0x10021b6a       0x55 /decoder/build/decoder.o
- *fill*         0x10021b6a        0x2 
+                0x10021a46       0xa5 /decoder/build/decoder.o
+ *fill*         0x10021a46        0x2 
  .rodata.SUBSCRIPTION_KDK
-                0x10021b6c       0x20 /decoder/build/decoder.o
-                0x10021b6c                SUBSCRIPTION_KDK
+                0x10021a48       0x20 /decoder/build/decoder.o
+                0x10021a48                SUBSCRIPTION_KDK
  .rodata.ED25519_PUBLIC_KEY
-                0x10021b8c       0x20 /decoder/build/decoder.o
-                0x10021b8c                ED25519_PUBLIC_KEY
+                0x10021a68       0x20 /decoder/build/decoder.o
+                0x10021a68                ED25519_PUBLIC_KEY
  .rodata.flash_simple_irq.str1.4
-                0x10021bac       0x27 /decoder/build/simple_flash.o
+                0x10021a88       0x27 /decoder/build/simple_flash.o
  .rodata.uart_init.str1.4
-                0x10021bac       0x1d /decoder/build/simple_uart.o
- .rodata.tau    0x10021bac       0x10 /decoder/build/chacha.o
- .rodata.sigma  0x10021bbc       0x10 /decoder/build/chacha.o
+                0x10021a88       0x1d /decoder/build/simple_uart.o
+ .rodata.tau    0x10021a88       0x10 /decoder/build/chacha.o
+ .rodata.sigma  0x10021a98       0x10 /decoder/build/chacha.o
  .rodata.ed25519_order
-                0x10021bcc       0x20 /decoder/build/ed25519.o
+                0x10021aa8       0x20 /decoder/build/ed25519.o
  .rodata.ed25519Ctx
-                0x10021bec       0x21 /decoder/build/ed25519.o
- *fill*         0x10021c0d        0x3 
- .rodata.zero   0x10021c10       0x20 /decoder/build/fe_operations.o
- .rodata.d2     0x10021c30       0x28 /decoder/build/ge_operations.o
+                0x10021ac8       0x21 /decoder/build/ed25519.o
+ *fill*         0x10021ae9        0x3 
+ .rodata.zero   0x10021aec       0x20 /decoder/build/fe_operations.o
+ .rodata.d2     0x10021b0c       0x28 /decoder/build/ge_operations.o
  .rodata.sqrtm1
-                0x10021c58       0x28 /decoder/build/ge_operations.o
- .rodata.d      0x10021c80       0x28 /decoder/build/ge_operations.o
- .rodata.Bi     0x10021ca8      0x3c0 /decoder/build/ge_operations.o
- .rodata.base   0x10022068     0x7800 /decoder/build/ge_operations.o
- .rodata.K      0x10029868      0x100 /decoder/build/sha256.o
- .rodata.K512   0x10029968      0x280 /decoder/build/sha512.o
+                0x10021b34       0x28 /decoder/build/ge_operations.o
+ .rodata.d      0x10021b5c       0x28 /decoder/build/ge_operations.o
+ .rodata.Bi     0x10021b84      0x3c0 /decoder/build/ge_operations.o
+ .rodata.base   0x10021f44     0x7800 /decoder/build/ge_operations.o
+ .rodata.K      0x10029744      0x100 /decoder/build/sha256.o
+ *fill*         0x10029844        0x4 
+ .rodata.K512   0x10029848      0x280 /decoder/build/sha512.o
  .rodata.mxc_assert.str1.4
-                0x10029be8       0x19 /decoder/build/board.o
+                0x10029ac8       0x19 /decoder/build/board.o
  .rodata.Board_Init.str1.4
-                0x10029be8       0x4d /decoder/build/board.o
+                0x10029ac8       0x4d /decoder/build/board.o
  .rodata.num_leds
-                0x10029be8        0x4 /decoder/build/board.o
-                0x10029be8                num_leds
+                0x10029ac8        0x4 /decoder/build/board.o
+                0x10029ac8                num_leds
  .rodata.led_pin
-                0x10029bec       0x24 /decoder/build/board.o
-                0x10029bec                led_pin
+                0x10029acc       0x24 /decoder/build/board.o
+                0x10029acc                led_pin
  .rodata.num_pbs
-                0x10029c10        0x4 /decoder/build/board.o
-                0x10029c10                num_pbs
+                0x10029af0        0x4 /decoder/build/board.o
+                0x10029af0                num_pbs
  .rodata.pb_pin
-                0x10029c14       0x18 /decoder/build/board.o
-                0x10029c14                pb_pin
- .rodata.LED_On.str1.4
-                0x10029c2c       0x43 /decoder/build/led.o
+                0x10029af4       0x18 /decoder/build/board.o
+                0x10029af4                pb_pin
  .rodata.gpio_cfg_uart3
-                0x10029c2c        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
-                0x10029c2c                gpio_cfg_uart3
+                0x10029b0c        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+                0x10029b0c                gpio_cfg_uart3
  .rodata.gpio_cfg_uart2
-                0x10029c38        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
-                0x10029c38                gpio_cfg_uart2
+                0x10029b18        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+                0x10029b18                gpio_cfg_uart2
  .rodata.gpio_cfg_uart1
-                0x10029c44        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
-                0x10029c44                gpio_cfg_uart1
+                0x10029b24        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+                0x10029b24                gpio_cfg_uart1
  .rodata.gpio_cfg_uart0
-                0x10029c50        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
-                0x10029c50                gpio_cfg_uart0
+                0x10029b30        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+                0x10029b30                gpio_cfg_uart0
  .rodata.gpio_cfg_extclk
-                0x10029c5c        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
-                0x10029c5c                gpio_cfg_extclk
+                0x10029b3c        0xc /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+                0x10029b3c                gpio_cfg_extclk
  .rodata.MXC_UART_RevB_Init.str1.4
-                0x10029c68       0x7b /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+                0x10029b48       0x7b /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
  .rodata.MXC_GPIO_Common_Handler.str1.4
-                0x10029c68       0x6e /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
+                0x10029b48       0x6e /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
  .rodata.CSWTCH.16
-                0x10029c68       0x10 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
+                0x10029b48       0x10 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
  .rodata.str1.4
-                0x10029c78        0x2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o)
- .rodata        0x10029c78      0x101 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ctype_.o)
-                0x10029c78                _ctype_
+                0x10029b58        0x2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o)
+ .rodata        0x10029b58      0x101 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ctype_.o)
+                0x10029b58                _ctype_
  .rodata.str1.4
-                0x10029d79       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
- *fill*         0x10029d79        0x3 
- .rodata        0x10029d7c       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
+                0x10029c59       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
+ *fill*         0x10029c59        0x3 
+ .rodata        0x10029c5c       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
  .rodata.str1.4
-                0x10029d9c       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
- .rodata        0x10029d9c       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
+                0x10029c7c       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
+ .rodata        0x10029c7c       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
  .rodata.str1.4
-                0x10029dbc       0x54 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-dtoa.o)
+                0x10029c9c       0x54 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-dtoa.o)
  .rodata.str1.4
-                0x10029dbc       0x43 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-assert.o)
+                0x10029c9c       0x43 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-assert.o)
  .rodata.str1.4
-                0x10029dbc       0x41 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
- *fill*         0x10029dbc        0x4 
- .rodata        0x10029dc0      0x128 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
-                0x10029dd0                __mprec_tens
-                0x10029e98                __mprec_tinytens
-                0x10029ec0                __mprec_bigtens
+                0x10029c9c       0x41 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
+ *fill*         0x10029c9c        0x4 
+ .rodata        0x10029ca0      0x128 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
+                0x10029cb0                __mprec_tens
+                0x10029d78                __mprec_tinytens
+                0x10029da0                __mprec_bigtens
  .rodata.str1.4
-                0x10029ee8       0x12 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-locale.o)
+                0x10029dc8       0x12 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-locale.o)
  .rodata.str1.4
-                0x10029ee8       0x2f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
- .rodata        0x10029ee8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
+                0x10029dc8       0x2f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
+ .rodata        0x10029dc8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
  *(.init)
- .init          0x10029f08        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
-                0x10029f08                _init
- .init          0x10029f0c        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x10029de8        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
+                0x10029de8                _init
+ .init          0x10029dec        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x10029f14        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
-                0x10029f14                _fini
- .fini          0x10029f18        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
- .fini.__stub   0x10029f20       0x20 linker stubs
+ .fini          0x10029df4        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
+                0x10029df4                _fini
+ .fini          0x10029df8        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
+ .fini.__stub   0x10029e00       0x20 linker stubs
  *(.eh_frame*)
- .eh_frame      0x10029f40        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
- .eh_frame      0x10029f40       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
- .eh_frame      0x10029f74       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
- .eh_frame      0x10029fa0       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
- .eh_frame      0x10029ff0        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
-                0x10029ff4                        _etext = .
+ .eh_frame      0x10029e20        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x10029e20       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
+ .eh_frame      0x10029e54       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
+ .eh_frame      0x10029e80       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
+ .eh_frame      0x10029ed0        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
+                0x10029ed4                        _etext = .
 
-.glue_7         0x10029ff4        0x0
- .glue_7        0x10029ff4        0x0 linker stubs
+.glue_7         0x10029ed4        0x0
+ .glue_7        0x10029ed4        0x0 linker stubs
 
-.glue_7t        0x10029ff4        0x0
- .glue_7t       0x10029ff4        0x0 linker stubs
+.glue_7t        0x10029ed4        0x0
+ .glue_7t       0x10029ed4        0x0 linker stubs
 
-.vfp11_veneer   0x10029ff4        0x0
- .vfp11_veneer  0x10029ff4        0x0 linker stubs
+.vfp11_veneer   0x10029ed4        0x0
+ .vfp11_veneer  0x10029ed4        0x0 linker stubs
 
-.v4_bx          0x10029ff4        0x0
- .v4_bx         0x10029ff4        0x0 linker stubs
+.v4_bx          0x10029ed4        0x0
+ .v4_bx         0x10029ed4        0x0 linker stubs
 
-.iplt           0x10029ff4        0x0
- .iplt          0x10029ff4        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x10029ed4        0x0
+ .iplt          0x10029ed4        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.bin_storage    0x10029ff4        0x0
+.bin_storage    0x10029ed4        0x0
  FILL mask 0xff
-                0x10029ff4                        _bin_start_ = .
+                0x10029ed4                        _bin_start_ = .
  *(.bin_storage_img)
-                0x10029ff4                        _bin_end_ = .
-                0x10029ff4                        . = ALIGN (0x4)
+                0x10029ed4                        _bin_end_ = .
+                0x10029ed4                        . = ALIGN (0x4)
 
 .rom_code       0x00000000        0x0
                 0x00000000                        . = ALIGN (0x10)
@@ -8371,9 +8368,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  *(.rom_code_section)
                 0x20000000                        _esran_code = .
 
-.flash_code     0x10029ff4        0xc
-                0x1002a000                        . = ALIGN (0x10)
- *fill*         0x10029ff4        0xc 
+.flash_code     0x10029ed4        0xc
+                0x10029ee0                        . = ALIGN (0x10)
+ *fill*         0x10029ed4        0xc 
                 0x20000000                        _sran_code = .
  *(.flash_code_section)
                 0x20000000                        _esran_code = .
@@ -8384,22 +8381,22 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  *(.sram_code_section)
                 0x20000000                        _esran_code = .
 
-.ARM.exidx      0x1002a000        0x8
-                0x1002a000                        __exidx_start = .
+.ARM.exidx      0x10029ee0        0x8
+                0x10029ee0                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x1002a000        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
- .ARM.exidx     0x1002a008        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
+ .ARM.exidx     0x10029ee0        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
+ .ARM.exidx     0x10029ee8        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x1002a008        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
+ .ARM.exidx     0x10029ee8        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x1002a008        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x10029ee8        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x1002a008                        __exidx_end = .
+                0x10029ee8                        __exidx_end = .
 
-.rel.dyn        0x1002a008        0x0
- .rel.iplt      0x1002a008        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x10029ee8        0x0
+ .rel.iplt      0x10029ee8        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.data           0x20000000      0xbc4 load address 0x1002a008
+.data           0x20000000      0xbc4 load address 0x10029ee8
                 0x20000000                        _data = ALIGN (., 0x4)
  *(.data*)
  .data.ConsoleUart
@@ -8458,19 +8455,19 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  .fini_array    0x20000bc0        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
                 0x20000bc4                        PROVIDE (__fini_array_end = .)
                 0x20000bc4                        _edata = ALIGN (., 0x4)
-                0x1002a008                        __load_data = LOADADDR (.data)
+                0x10029ee8                        __load_data = LOADADDR (.data)
 
 .tm_clone_table
-                0x20000bc4        0x0 load address 0x1002abcc
+                0x20000bc4        0x0 load address 0x1002aaac
  .tm_clone_table
                 0x20000bc4        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000bc4        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x20000bc4        0x0 load address 0x1002abcc
+.igot.plt       0x20000bc4        0x0 load address 0x1002aaac
  .igot.plt      0x20000bc4        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.bss            0x20000c00    0x12b3c load address 0x1002abcc
+.bss            0x20000c00    0x12b3c load address 0x1002aaac
                 0x20000c00                        . = ALIGN (0x4)
                 0x20000c00                        _bss = .
  *(.bss*)
@@ -8511,7 +8508,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  *(COMMON)
                 0x2001373c                        _ebss = ALIGN (., 0x4)
 
-.shared         0x2001373c        0x4 load address 0x1002abcc
+.shared         0x2001373c        0x4 load address 0x1002aaac
                 0x2001373c                        . = ALIGN (0x4)
                 0x2001373c                        _shared = .
  *(.mailbox*)
@@ -8520,15 +8517,15 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  .shared        0x2001373c        0x4 /decoder/build/system_max78000.o
                 0x2001373c                SystemCoreClock
                 0x20013740                        _eshared = ALIGN (., 0x4)
-                0x1002abcc                        __shared_data = LOADADDR (.shared)
+                0x1002aaac                        __shared_data = LOADADDR (.shared)
                 0x20020000                        __StackTop = (ORIGIN (SRAM) + LENGTH (SRAM))
                 0x2001f000                        __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
 
-.stack_dummy    0x20013740     0x1000 load address 0x1002abd0
+.stack_dummy    0x20013740     0x1000 load address 0x1002aab0
  *(.stack*)
  .stack         0x20013740     0x1000 /decoder/build/startup_firmware.o
 
-.heap           0x20013740      0xc00 load address 0x1002abd0
+.heap           0x20013740      0xc00 load address 0x1002aab0
                 0x20013740                        . = ALIGN (0x4)
  *(.heap*)
  .heap          0x20013740      0xc00 /decoder/build/startup_firmware.o
@@ -9536,88 +9533,88 @@ LOAD linker stubs
  .debug_line    0x0001639a      0x574 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
  .debug_line    0x0001690e       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_str      0x00000000    0x2e2a7
- .debug_str     0x00000000    0x2e2a7 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
-                              0x152f5 (size before relaxing)
- .debug_str     0x0002e2a7    0x17ea4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
- .debug_str     0x0002e2a7    0x14e5d /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
- .debug_str     0x0002e2a7    0x1d1b9 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
- .debug_str     0x0002e2a7    0x1a966 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
- .debug_str     0x0002e2a7    0x19cb4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_reva.o)
- .debug_str     0x0002e2a7    0x1b7aa /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
- .debug_str     0x0002e2a7    0x18830 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
- .debug_str     0x0002e2a7    0x157f9 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
- .debug_str     0x0002e2a7    0x15ae9 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
- .debug_str     0x0002e2a7    0x1d2a2 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
- .debug_str     0x0002e2a7    0x16e03 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
- .debug_str     0x0002e2a7    0x205e6 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
- .debug_str     0x0002e2a7    0x18ec5 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_common.o)
- .debug_str     0x0002e2a7    0x14f94 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
- .debug_str     0x0002e2a7       0xa3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
- .debug_str     0x0002e2a7      0x1a2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
- .debug_str     0x0002e2a7      0x528 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fflush.o)
- .debug_str     0x0002e2a7      0x1c1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memmove.o)
- .debug_str     0x0002e2a7      0x49b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
- .debug_str     0x0002e2a7      0x4a6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
- .debug_str     0x0002e2a7      0x611 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-freer.o)
- .debug_str     0x0002e2a7      0x18e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcmp.o)
- .debug_str     0x0002e2a7      0x500 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fclose.o)
- .debug_str     0x0002e2a7      0x4ef /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-snprintf.o)
- .debug_str     0x0002e2a7       0xa4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
- .debug_str     0x0002e2a7      0x197 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sysconf.o)
- .debug_str     0x0002e2a7      0x50e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-stdio.o)
- .debug_str     0x0002e2a7      0x1ef /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
- .debug_str     0x0002e2a7      0x594 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reallocr.o)
- .debug_str     0x0002e2a7      0x4a7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-writer.o)
- .debug_str     0x0002e2a7      0x5e9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fstatr.o)
- .debug_str     0x0002e2a7      0x4bf /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mlock.o)
- .debug_str     0x0002e2a7      0x6a9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
- .debug_str     0x0002e2a7      0x51a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o)
- .debug_str     0x0002e2a7      0x545 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fvwrite.o)
- .debug_str     0x0002e2a7      0x187 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ctype_.o)
- .debug_str     0x0002e2a7      0x1cb /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
- .debug_str     0x0002e2a7      0x4dc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-printf.o)
- .debug_str     0x0002e2a7      0x4aa /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sbrkr.o)
- .debug_str     0x0002e2a7      0x497 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-closer.o)
- .debug_str     0x0002e2a7      0x1c5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
- .debug_str     0x0002e2a7      0x4b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fwalk.o)
- .debug_str     0x0002e2a7      0x918 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
- .debug_str     0x0002e2a7      0x634 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-makebuf.o)
- .debug_str     0x0002e2a7       0x96 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
- .debug_str     0x0002e2a7      0x8c6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
- .debug_str     0x0002e2a7      0x4a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-readr.o)
- .debug_str     0x0002e2a7      0x6c9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mallocr.o)
- .debug_str     0x0002e2a7      0x879 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-dtoa.o)
- .debug_str     0x0002e2a7      0x4d2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wsetup.o)
- .debug_str     0x0002e2a7      0x4a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-lseekr.o)
- .debug_str     0x0002e2a7      0x258 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
- .debug_str     0x0002e2a7      0x4c0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reent.o)
- .debug_str     0x0002e2a7      0x236 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
- .debug_str     0x0002e2a7      0x4a1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-isattyr.o)
- .debug_str     0x0002e2a7      0x4ea /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssprint_r.o)
- .debug_str     0x0002e2a7      0x4ea /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sprint_r.o)
- .debug_str     0x0002e2a7      0x4da /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-assert.o)
- .debug_str     0x0002e2a7      0x7b7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
- .debug_str     0x0002e2a7      0x6e7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-localeconv.o)
- .debug_str     0x0002e2a7      0x720 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-locale.o)
- .debug_str     0x0002e2a7      0x6c7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mbtowc_r.o)
- .debug_str     0x0002e2a7      0x191 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-abort.o)
- .debug_str     0x0002e2a7      0x4f3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-callocr.o)
- .debug_str     0x0002e2a7      0x4dc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssputs_r.o)
- .debug_str     0x0002e2a7      0x4e3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fiprintf.o)
- .debug_str     0x0002e2a7      0x6ce /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wctomb_r.o)
- .debug_str     0x0002e2a7      0x528 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signal.o)
- .debug_str     0x0002e2a7      0x4bd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signalr.o)
- .debug_str     0x0002e2a7      0x82e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
- .debug_str     0x0002e2a7      0x163 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libnosys.a(_exit.o)
- .debug_str     0x0002e2a7      0x151 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_str     0x0002e2a7       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_str     0x0002e2a7      0x15a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_str     0x0002e2a7       0xbf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_str     0x0002e2a7       0xbc /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixdfsi.o)
- .debug_str     0x0002e2a7       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
- .debug_str     0x0002e2a7      0x67f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
- .debug_str     0x0002e2a7       0xc0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
+.debug_str      0x00000000    0x2e2a1
+ .debug_str     0x00000000    0x2e2a1 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
+                              0x152ef (size before relaxing)
+ .debug_str     0x0002e2a1    0x17e9e /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(nvic_table.o)
+ .debug_str     0x0002e2a1    0x14e57 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(pins_ai85.o)
+ .debug_str     0x0002e2a1    0x1d1b3 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(sys_ai85.o)
+ .debug_str     0x0002e2a1    0x1a960 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_me17.o)
+ .debug_str     0x0002e2a1    0x19cae /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_reva.o)
+ .debug_str     0x0002e2a1    0x1b7a4 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_ai85.o)
+ .debug_str     0x0002e2a1    0x1882a /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_reva.o)
+ .debug_str     0x0002e2a1    0x157f3 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_me17.o)
+ .debug_str     0x0002e2a1    0x15ae3 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(icc_reva.o)
+ .debug_str     0x0002e2a1    0x1d29c /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_ai85.o)
+ .debug_str     0x0002e2a1    0x16dfd /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_common.o)
+ .debug_str     0x0002e2a1    0x205e0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(uart_revb.o)
+ .debug_str     0x0002e2a1    0x18ebf /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(flc_common.o)
+ .debug_str     0x0002e2a1    0x14f8e /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(gpio_common.o)
+ .debug_str     0x0002e2a1       0xa3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-strlen.o)
+ .debug_str     0x0002e2a1      0x1a2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+ .debug_str     0x0002e2a1      0x528 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fflush.o)
+ .debug_str     0x0002e2a1      0x1c1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memmove.o)
+ .debug_str     0x0002e2a1      0x49b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+ .debug_str     0x0002e2a1      0x4a6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
+ .debug_str     0x0002e2a1      0x611 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-freer.o)
+ .debug_str     0x0002e2a1      0x18e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcmp.o)
+ .debug_str     0x0002e2a1      0x500 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fclose.o)
+ .debug_str     0x0002e2a1      0x4ef /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-snprintf.o)
+ .debug_str     0x0002e2a1       0xa4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memcpy.o)
+ .debug_str     0x0002e2a1      0x197 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sysconf.o)
+ .debug_str     0x0002e2a1      0x50e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-stdio.o)
+ .debug_str     0x0002e2a1      0x1ef /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+ .debug_str     0x0002e2a1      0x594 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reallocr.o)
+ .debug_str     0x0002e2a1      0x4a7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-writer.o)
+ .debug_str     0x0002e2a1      0x5e9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fstatr.o)
+ .debug_str     0x0002e2a1      0x4bf /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mlock.o)
+ .debug_str     0x0002e2a1      0x6a9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+ .debug_str     0x0002e2a1      0x51a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-puts.o)
+ .debug_str     0x0002e2a1      0x545 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fvwrite.o)
+ .debug_str     0x0002e2a1      0x187 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ctype_.o)
+ .debug_str     0x0002e2a1      0x1cb /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+ .debug_str     0x0002e2a1      0x4dc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-printf.o)
+ .debug_str     0x0002e2a1      0x4aa /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sbrkr.o)
+ .debug_str     0x0002e2a1      0x497 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-closer.o)
+ .debug_str     0x0002e2a1      0x1c5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+ .debug_str     0x0002e2a1      0x4b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fwalk.o)
+ .debug_str     0x0002e2a1      0x918 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfprintf.o)
+ .debug_str     0x0002e2a1      0x634 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-makebuf.o)
+ .debug_str     0x0002e2a1       0x96 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memchr.o)
+ .debug_str     0x0002e2a1      0x8c6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-svfprintf.o)
+ .debug_str     0x0002e2a1      0x4a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-readr.o)
+ .debug_str     0x0002e2a1      0x6c9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mallocr.o)
+ .debug_str     0x0002e2a1      0x879 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-dtoa.o)
+ .debug_str     0x0002e2a1      0x4d2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wsetup.o)
+ .debug_str     0x0002e2a1      0x4a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-lseekr.o)
+ .debug_str     0x0002e2a1      0x258 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .debug_str     0x0002e2a1      0x4c0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reent.o)
+ .debug_str     0x0002e2a1      0x236 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+ .debug_str     0x0002e2a1      0x4a1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-isattyr.o)
+ .debug_str     0x0002e2a1      0x4ea /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssprint_r.o)
+ .debug_str     0x0002e2a1      0x4ea /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-sprint_r.o)
+ .debug_str     0x0002e2a1      0x4da /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-assert.o)
+ .debug_str     0x0002e2a1      0x7b7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mprec.o)
+ .debug_str     0x0002e2a1      0x6e7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-localeconv.o)
+ .debug_str     0x0002e2a1      0x720 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-locale.o)
+ .debug_str     0x0002e2a1      0x6c7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-mbtowc_r.o)
+ .debug_str     0x0002e2a1      0x191 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-abort.o)
+ .debug_str     0x0002e2a1      0x4f3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-callocr.o)
+ .debug_str     0x0002e2a1      0x4dc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-ssputs_r.o)
+ .debug_str     0x0002e2a1      0x4e3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fiprintf.o)
+ .debug_str     0x0002e2a1      0x6ce /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-wctomb_r.o)
+ .debug_str     0x0002e2a1      0x528 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signal.o)
+ .debug_str     0x0002e2a1      0x4bd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-signalr.o)
+ .debug_str     0x0002e2a1      0x82e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-vfiprintf.o)
+ .debug_str     0x0002e2a1      0x163 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libnosys.a(_exit.o)
+ .debug_str     0x0002e2a1      0x151 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x0002e2a1       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x0002e2a1      0x15a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_str     0x0002e2a1       0xbf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
+ .debug_str     0x0002e2a1       0xbc /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_str     0x0002e2a1       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x0002e2a1      0x67f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x0002e2a1       0xc0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
 
 .debug_frame    0x00000000     0x2750
  .debug_frame   0x00000000       0xd0 /root/msdk-2024_02/Libraries/PeriphDrivers/bin/MAX78000/softfp/libPeriphDriver_softfp.a(mxc_delay.o)
