@@ -95,14 +95,15 @@ const uint8_t EMERGENCY_KEY[] = { 0x" + ', 0x'.join(emergency_as_bytes) + " };\n
 
     secrets = json.dumps(secrets).encode(encoding='ascii')
 
-    decoder_secret_path = os.path.realpath(__file__ + '/../../../decoder/inc/secrets.h')
+    # decoder_secret_path = os.path.realpath(__file__ + '/../../../decoder/inc/secrets.h')
     # raise Exception(os.listdir(path=os.path.realpath('/workdir/')))
-    raise Exception(args)
+    # raise Exception(args)
     
-    if os.path.isdir(__file__ + '/../decoder'):
-        decoder_secret_path = os.path.realpath(__file__ + '/../decoder/inc/secrets.h')
+    # if os.path.isdir(__file__ + '/../decoder'):
+        # decoder_secret_path = os.path.realpath(__file__ + '/../decoder/inc/secrets.h')
     
-    print(decoder_secret_path)
+    # print(decoder_secret_path)
+    decoder_secret_path = args.secrets_file.with_suffix('.h')
     with open(decoder_secret_path, "wb" if args.force else "xb") as f:
         # dump file for including on the decoder
         f.write(decoder_file.encode('ascii'))

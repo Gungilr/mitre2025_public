@@ -30007,14 +30007,14 @@ void MXC_GPIO_Common_Handler(unsigned int port)
 100216bc:	6e6f6974 	.word	0x6e6f6974
 100216c0:	6c615620 	.word	0x6c615620
 100216c4:	000a6469 	.word	0x000a6469
-100216c8:	75f28556 	.word	0x75f28556
-100216cc:	c9f78da7 	.word	0xc9f78da7
-100216d0:	10f1f9f0 	.word	0x10f1f9f0
-100216d4:	5383f69a 	.word	0x5383f69a
-100216d8:	8a02b75f 	.word	0x8a02b75f
-100216dc:	c987be85 	.word	0xc987be85
-100216e0:	ba7030fd 	.word	0xba7030fd
-100216e4:	636d09fd 	.word	0x636d09fd
+100216c8:	5e3210e2 	.word	0x5e3210e2
+100216cc:	6eb59987 	.word	0x6eb59987
+100216d0:	8681678d 	.word	0x8681678d
+100216d4:	3cdbeb85 	.word	0x3cdbeb85
+100216d8:	1ed846a2 	.word	0x1ed846a2
+100216dc:	facc8cf6 	.word	0xfacc8cf6
+100216e0:	32e9a8ca 	.word	0x32e9a8ca
+100216e4:	a9f97684 	.word	0xa9f97684
 100216e8:	00000000 	.word	0x00000000
 100216ec:	6f636544 	.word	0x6f636544
 100216f0:	20726564 	.word	0x20726564
@@ -30233,12 +30233,12 @@ void MXC_GPIO_Common_Handler(unsigned int port)
 10021a44:	0000002e 	.word	0x0000002e
 
 10021a48 <SUBSCRIPTION_KDK>:
-10021a48:	f42ca751 3a65253f 5f52444c 653befea     Q.,.?%e:LDR_..;e
-10021a58:	fce9ed4c 6f871a80 740b1751 2f736ca2     L......oQ..t.ls/
+10021a48:	086d186a f4e83dcb 1c47e4e2 b682093c     j.m..=....G.<...
+10021a58:	6033838d b397636a 20f6f74a d47a1df3     ..3`jc..J.. ..z.
 
 10021a68 <ED25519_PUBLIC_KEY>:
-10021a68:	006af021 87595607 f0364599 ea8d6205     !.j..VY..E6..b..
-10021a78:	7d116e90 d90f2abb fb85cbd2 0bb45081     .n.}.*.......P..
+10021a68:	d77f2502 bc117816 0e38e781 2817d375     .%...x....8.u..(
+10021a78:	3e4b24e1 3a7e1a63 4a2ba193 95d2a168     .$K>c.~:..+Jh...
 
 10021a88 <tau>:
 10021a88:	61707865 3120646e 79622d36 6b206574     expand 16-byte k
