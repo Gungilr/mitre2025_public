@@ -103,12 +103,12 @@ const uint8_t EMERGENCY_KEY[] = { 0x" + ', 0x'.join(emergency_as_bytes) + " };\n
         # decoder_secret_path = os.path.realpath(__file__ + '/../decoder/inc/secrets.h')
     
     # print(decoder_secret_path)
-    decoder_secret_path = args.secrets_file.with_suffix('.h')
-    with open(decoder_secret_path, "wb" if args.force else "xb") as f:
-        # dump file for including on the decoder
-        f.write(decoder_file.encode('ascii'))
+    # decoder_secret_path = args.secrets_file.with_suffix('.h')
+    # with open(decoder_secret_path, "wb" if args.force else "xb") as f:
+    #     # dump file for including on the decoder
+    #     f.write(decoder_file.encode('ascii'))
 
-    logger.success(f"Wrote decoder secrets to {decoder_secret_path}")
+    # logger.success(f"Wrote decoder secrets to {decoder_secret_path}")
 
     return secrets
 
