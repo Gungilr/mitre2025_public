@@ -12,6 +12,7 @@ Copyright: Copyright (c) 2025 The MITRE Corporation
 
 import argparse
 import json
+import os
 from pathlib import Path
 from secrets import token_bytes
 
@@ -94,8 +95,9 @@ const uint8_t EMERGENCY_KEY[] = { 0x" + ', 0x'.join(emergency_as_bytes) + " };\n
 
     secrets = json.dumps(secrets).encode(encoding='ascii')
 
-    decoder_secret_path = 'decoder/inc/secrets.h'
+    decoder_secret_path = os.path.realpath(__file__ + '/../../../decoder/inc/secrets.h') 
 
+    print(decoder_secret_path)
     with open(decoder_secret_path, "wb" if args.force else "xb") as f:
         # dump file for including on the decoder
         f.write(decoder_file.encode('ascii'))
