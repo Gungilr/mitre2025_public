@@ -91,6 +91,10 @@ void flash_simple_read(uint32_t address, void* buffer, uint32_t size) {
  * flash_simple_erase_page documentation.
 */
 int flash_simple_write(uint32_t address, void* buffer, uint32_t size) {
+    if (address + size >= ((MXC_FLASH_MEM_BASE + MXC_FLASH_MEM_SIZE) - 1 * MXC_FLASH_PAGE_SIZE)) {
+        // last page check
+        return -1;
+    }
     return MXC_FLC_Write(address, size, (uint32_t *)buffer);
 }
 
