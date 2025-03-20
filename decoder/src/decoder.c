@@ -296,8 +296,12 @@ int update_subscription(uint16_t pkt_len, subscription_update_packet_t *update) 
     }
 
     uint32_t sub_flash_address = FLASH_STATUS_ADDR + (index * 2) * MXC_FLASH_PAGE_SIZE;
-    flash_simple_erase_page(sub_flash_address);
-    flash_simple_erase_page(sub_flash_address + MXC_FLASH_PAGE_SIZE);
+    if (flash_simple_erase_page(sub_flash_address) < 0) {
+        print_error("Error erasing page.");
+    }
+    if (flash_simple_erase_page(sub_flash_address + MXC_FLASH_PAGE_SIZE) < 0) {
+        print_error("Error erasing page.");
+    }
     if (flash_simple_write(sub_flash_address, &(decoder_state.subscriptions[index]), sizeof(subscription_t) - (MAX_KEYS_PER_SUBSCRIPTION - (decoder_state.subscriptions[index].nkeys & 0x7f)) * sizeof(key_entry_t)) < 0) {  // truncated
         print_error("Could not write subscription to flash");
     }
@@ -401,8 +405,9 @@ void init() {
             decoder_state.subscriptions[i].nkeys = 0;
             decoder_state.subscriptions[i].stk_sz = 0;
         }
-
-        flash_reset();
+        if (flash_reset() < 0) {
+            print_error("Error erasing flash.");
+        }
         if (flash_simple_write(FLASH_FIRST_BOOT_ADDR, &(decoder_state.first_boot), sizeof(decoder_state.first_boot)) < 0) {  // canary
             print_error("Could not write to flash.");
         }

@@ -68,8 +68,8 @@ void flash_simple_read(uint32_t address, void* buffer, uint32_t size);
 int flash_simple_write(uint32_t address, void* buffer, uint32_t size);
 
 /**
- * @brief Resets FLASH_NUM_PAGES of flash starting at FLASH_STATUS_ADDR
+ * @brief Resets FLASH_NUM_PAGES of flash starting at FLASH_STATUS_ADDR, except the last page
  */
-void flash_reset(void);
+int flash_reset(void);
 
 #endif

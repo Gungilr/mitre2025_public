@@ -59,6 +59,9 @@ void flash_simple_init(void) {
  * In order to be re-written the entire page must be erased.
 */
 int flash_simple_erase_page(uint32_t address) {
+    if (address >= (MXC_FLASH_MEM_BASE + MXC_FLASH_MEM_SIZE) - (MXC_FLASH_PAGE_SIZE)) {
+        return -1;
+    }
     return MXC_FLC_PageErase(address);
 }
 
@@ -98,10 +101,13 @@ int flash_simple_write(uint32_t address, void* buffer, uint32_t size) {
     return MXC_FLC_Write(address, size, (uint32_t *)buffer);
 }
 
-void flash_reset(void) {
+int flash_reset(void) {
     uint32_t addr = FLASH_FIRST_BOOT_ADDR;
-    for (int i = 0; i < FLASH_NUM_PAGES; i++) {
-        flash_simple_erase_page(addr);
+    for (int i = 0; i < FLASH_NUM_PAGES - 1; i++) {
+        if (flash_simple_erase_page(addr) < 0) {
+            return -1;
+        }
         addr += MXC_FLASH_PAGE_SIZE;
     }
+    return 0;
 }
